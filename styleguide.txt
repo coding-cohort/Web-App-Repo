@@ -3,11 +3,14 @@ Style guide for pain monitoring app
 
 linear-gradient - bottom to top #B2B6F7 100% opacity
 
+
 All icons with 50 - 65% opacity - just check whether they look even or not. If one stands out more than the others it needs to be adjusted.
 
 All text white #ffffff
+Font used for everything is: Lato - download this from google api fonts.
 
 Button color - #2B98EA
+
 
 Hand emoji can be inserted from emoji text
 
