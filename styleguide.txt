@@ -1,0 +1,31 @@
+
+Style guide for pain monitoring app
+
+linear-gradient - bottom to top #B2B6F7 100% opacity
+
+
+All icons with 50 - 65% opacity - just check whether they look even or not. If one stands out more than the others it needs to be adjusted.
+
+All text white #ffffff
+Font used for everything is: Lato - download this from google api fonts.
+
+Button color - #2B98EA
+
+
+Hand emoji can be inserted from emoji text
+
+Screen sizes:
+
+1366x768	16:9	19.1%	14'' Notebook / 15.6'' Laptop / 18.5'' monitor
+1920x1080	16:9	9.4%	21.5'' monitor / 23'' monitor / 1080p TV
+1280x800	8:5	8.5%	14'' Notebook
+
+iPad and iOS screen sizes
+https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html
+
+Don't optimise for all just say x3 key ones for iPad and x2 for iPhone for example iPhone 8 and iPhone 11.
+
+
+
+
+
