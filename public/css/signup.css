@@ -1,315 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
+
+
 body {
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  text-align: center;
+  height: 100vh;
+  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
+  );
+  font-family: "Lato";
+  color: #fff
+  
+}
+
+.image {
+    height: 300px;
+    width: 200px;
+
 }
 
 .logo {
-  margin-left: 40px;
-  transform: translate(0%, -170%);
-  width: 70px;
-  height: 70px;
-}
-
-h1 {
-  text-align: center;
-  color: #fff;
-  transform: translate(0%, -550%);
-}
-
-h2 {
-  text-align: center;
-  color: #fff;
-  transform: translate(0%, -350%);
-}
-img {
+  height: 150px;
   width: 100px;
-  height: 100px;
-  transform: translate(15%, -320%);
-  margin-left: 44%;
-  margin-top: 140px;
-}
-h3 {
-  position: relative;
-  font-size: 20px;
-  color: white;
-  letter-spacing: 1px;
-  left: 5px;
-  font-weight: 500;
-  margin-bottom: 5px;
+
 }
 
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  max-width: 350px;
-  width: 100%;
-  padding: 25px;
-}
 
-#form {
-  position: relative;
-}
-
-#form #email {
-  width: 300px;
-  border: #979797;
-  background: #d8d8d8;
-  padding: 10px;
-  border-radius: 6px;
-  color: #fff;
-  font-style: 18px;
-}
-
-#form1 #name {
-  width: 300px;
-  border: #979797;
-  background: #d8d8d8;
-  padding: 10px;
-  border-radius: 6px;
-  color: #fff;
-  font-style: 18px;
-}
-
-#form2 #surname {
-  width: 300px;
-  border: #979797;
-  background: #d8d8d8;
-  padding: 10px;
-  border-radius: 6px;
-  color: #fff;
-  font-style: 18px;
-}
-
-#form3 #password {
-  width: 300px;
-  border: #979797;
-  background: #d8d8d8;
-  padding: 10px;
-  border-radius: 6px;
-  color: #fff;
-  font-style: 18px;
-}
-
-#form.inputBox {
-  position: relative;
-}
-
-#form1.inputBox_name {
-  position: relative;
-}
-
-#form2.inputBox_surname {
-  position: relative;
-}
-
-#form3.inputBox_password {
-  position: relative;
-}
-
-#text {
-  display: block;
-  color: #000;
-  font-weight: 300;
-  font-style: italic;
-  padding: 5px;
-}
-
-#text1 {
-  display: block;
-  color: #000;
-  font-weight: 300;
-  font-style: italic;
-  padding: 5px;
-}
-
-#text2 {
-  display: block;
-  color: #000;
-  font-weight: 300;
-  font-style: italic;
-  padding: 5px;
-}
-
-#text3 {
-  display: block;
-  color: #000;
-  font-weight: 300;
-  font-style: italic;
-  padding: 5px;
-}
-
-#form.invalid .inputBox::before {
-  content: '';
-  position: absolute;
-  right: 50px;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/invalid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form.valid .inputBox::before {
-  content: '';
-  position: absolute;
-  right: 50px;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/valid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form1.invalid1 .inputBox_name::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/invalid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form1.valid1 .inputBox_name::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/valid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form2.invalid2 .inputBox_surname::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/invalid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form2.valid2 .inputBox_surname::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/valid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form3.invalid3 .inputBox_password::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/invalid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form3.valid3 .inputBox_password::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/valid.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form1.mark .inputBox_name::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/mark.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form.mark1 .inputBox::before {
-  content: '';
-  position: absolute;
-  right: 50px;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/mark.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form2.mark2 .inputBox_surname::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/mark.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-#form3.mark3 .inputBox_password::before {
-  content: '';
-  position: absolute;
-  right: 19%;
-  margin-top: 6px;
-  width: 24px;
-  height: 24px;
-  background: url('../images/mark.png');
-  background-size: cover;
-  z-index: 1000;
-}
-
-.button {
-  display: block;
-  transform: translate(10%, -50%);
-  border: 1px solid#979797;
-  width: 260px;
-  height: 36px;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
-}
-
-.button:hover {
-  background: -webkit-linear-gradient(left, #b224ef, #7579ff);
-  transition: 0.5s ease-in-out;
-}
 
 @media screen {
   /* img {
