@@ -1,3 +1,117 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  font-family: lato;
+  text-decoration: none;
+    
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
+  );
+  font-family: "Lato";
+  color: #fff
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.logo {
+  height: 100px;
+  width: 75px;
+  margin-top: 40px;
+  margin-left: 50px;
+  
+}
+
+.h1 {
+    font-size: 4rem;
+    padding-top: 30px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+
+button {
+  background-color: #2B98EA;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+
+.super_woman {
+    padding-top: 30px;
+    height: 300px;
+    width: 200px;
+
+}
+
+.main-container {
+    padding: 40px 40px;
+    flex-direction: column;
+
+}
+
+.hero-text {
+    padding: 30px 30px;
+    line-height: 1.6;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.sub-text {
+    padding: 40px 20px 40px 20px;
+    line-height: 1.4;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+     button {
+     display: none;
+   }
+
+   .logo {
+       height: 50px;
+  width: 35px;
+
+   }
+
+   .h1 {
+       font-size: 2rem;
+
+   }
+  
+}
 
 

@@ -11,6 +11,7 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
 body {
   height: 100vh;
   /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
