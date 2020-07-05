@@ -4,37 +4,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
+    <meta name="theme-color" content="#7b7fec">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="input-pain-levels.css" />
+
     <script src="input-pain-level.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <title>Document</title>
+    <title>Input Pain Levels Page</title>
 </head>
 
 <body>
+    <main>
+        <nav class="top-icons">
+            <img id="logoimg" src="Logo.png" alt="logo for website with letters D E, short for Debbie">
+            <h1 id="main-heading">Debbie</h1>
+            <button
+                style="background: transparent;border: none;font-size: 2em; color: black;text-align: center;color: rgb(255, 255, 255);cursor: pointer;margin-right: 30px;">X</button>
+        </nav>
+        <div class="img-container">
+            <img id="superwomanimg" src="super_woman.png" alt="super woman image">
+        </div>
+        <h2 id="heading">Let Debbie help monitor your pain</h2>
 
-    <img id="logoimg" src="Logo.png" alt="logo">
-    <h1 id="main-heading">Debbie</h1>
-    <div class="img-container">
-        <img id="superwomanimg" src="super_woman.png" alt="super woman image">
-    </div>
-    <h2 id="heading">Let Debbie help monitor your pain</h2>
-    <div class="fingerimg">
-        <img src="finger.png" alt="finger pointing downward" id="finger">
-    </div>
-    <p id="askpainlevel">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
-    <div class="numberinput">
-        <button id="minus">-</button>
-        <span id="number">1</span>
-        <button id="plus">+</button>
-    </div>
-    <div class="savebtn">
-        <form>
-            <input type="button" id="save" class="save-button" value="Save" />
-        </form>
-    </div>
-    <div class="heart">
-        <img src="Path.png" alt="heart icon" id="hearticon">
-    </div>
+        <div class="fingerimg">
+            <i style="color: transparent;  
+            text-shadow: 0 0 0 peachpuff;">&#x1F447;</i>
+        </div>
+        <p id="askpainlevel">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
+        <div class="numberinput">
+            <button id="minus">-</button>
+            <span id="number">1</span>
+            <button id="plus">+</button>
+        </div>
+        <div class="savebtn">
+            <form>
+                <input type="button" id="save" class="save-button" value="Save" />
+            </form>
+        </div>
+        <div class="heart">
+            <img src="Path.png" alt="heart icon" id="hearticon">
+        </div>
+        <footer id="footer">Built with <img src="Path.png" alt="heart icon" id="hearticonfooter"> by the coding cohort
+        </footer>
+    </main>
 </body>
 
 </html>

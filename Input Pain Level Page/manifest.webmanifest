@@ -1,0 +1,32 @@
+{
+  "short_name": "Debbie",
+  "name": "Pain Monitoring Web App",
+  "description": "This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.",
+  "icons": [
+    {
+      "src": "finger.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "Logo.png",
+      "type": "image/png",
+      "sizes": "145x200"
+    },
+    {
+      "src": "Path.png",
+      "type": "image/png",
+      "sizes": "84x70"
+    },
+    {
+      "src": "super_woman.png",
+      "type": "image/png",
+      "sizes": "107x144"
+    }
+  ],
+  "start_url": "",
+  "background_color": "#7b7fec",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#7b7fec"
+}
