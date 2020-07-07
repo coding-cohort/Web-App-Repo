@@ -1,17 +1,14 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   font-family: lato;
   text-decoration: none;
-    
 }
 
 body {
   text-align: center;
   min-height: 100vh;
-  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
 
   background-image: -webkit-linear-gradient(
     top,
@@ -20,7 +17,6 @@ body {
   );
   font-family: "Lato";
   color: #fff;
-  /* padding: 40px; */
 }
 
 main {
@@ -28,31 +24,30 @@ main {
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    margin: auto;
+  padding: 0 10%;
+  margin: 3rem 0 1rem 0;
+}
+
+.main-nav__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 .logo {
   height: 100px;
   width: 75px;
-  margin-top: 40px;
-  margin-left: 50px;
-  
 }
 
-.h1 {
-    font-size: 4rem;
-    padding-top: 30px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
+.brand-name {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
-
 
 button {
-  background-color: #2B98EA;
+  background-color: #2b98ea;
   width: 150px;
   border: none;
   border-radius: 4px;
@@ -62,38 +57,49 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
 }
 
-
-
 .super_woman {
-    padding-top: 30px;
-    height: 300px;
-    width: 200px;
-
+  padding-top: 30px;
+  height: 300px;
+  width: 200px;
 }
 
 .main-container {
-    /* padding: 40px 40px; */
-    flex-direction: column;
-
+  flex-direction: column;
 }
 
-.hero-text {
-    padding: 30px 30px;
-    line-height: 1.6;
-    font-size: 2em;
-    font-weight: 200;
+.header-section__about {
+  font-size: 1.7rem;
+  padding: 0.8rem 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.header-section__about-italic {
+  font-style: italic;
+}
+
+.header-section button:first-of-type {
+  margin: 2.5rem 0;
 }
 
 .sub-text {
-    padding: 40px 20px 40px 20px;
-    line-height: 1.4;
-    font-size: 1em;
-    font-weight: 200;
-    text-align: center;
+  padding: 40px 20px 40px 20px;
+  line-height: 1.4;
+  text-align: center;
+}
 
+/******************** Info Section  ********************/
+
+#info {
+  margin: 3rem 0;
+}
+
+.info-header,
+.about__header {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .links__icons {
@@ -104,24 +110,26 @@ button {
 
 .link__icon {
   width: 10%;
-  max-width: 4rem;
+  max-width: 3.5rem;
+  min-width: 2.6rem;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-row-gap: 3rem;
-  grid-template-areas: ". occupy1"
-                       "occupy2 .";
+  grid-row-gap: 5rem;
+  grid-template-areas:
+    ". occupy1"
+    "occupy2 .";
 }
 
 .about img {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 .about__chat img {
-  margin-right:  2rem;
+  margin-right: 2rem;
 }
 .about__reminder img {
   margin-left: 2rem;
@@ -135,15 +143,12 @@ button {
 
 .about__chat {
   grid-area: occupy1;
+  text-align: left;
 }
 
 .about__reminder {
   grid-area: occupy2;
-}
-
-.about__header {
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+  text-align: right;
 }
 
 #sign-up {
@@ -153,7 +158,7 @@ button {
 .sign-up__button--big {
   width: 22rem;
   height: 5rem;
-  background-color: #2B98EA;
+  background-color: #2b98ea;
 }
 
 .sign-up__button a {
@@ -161,59 +166,65 @@ button {
   color: inherit;
 }
 
+/******************** Footer  ********************/
+
 #authors {
-  margin: 8rem auto;
-}
-#authors p {
-  text-align: center;
-}
-#authors img {
-  width: 2rem;
+  margin: 0 0 8rem 0;
 }
 
+#authors p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#authors img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
 
 @media (max-width: 768px) {
   main {
-    margin: 6%;
+    padding: 6%;
   }
 
-  .sign-up__button--header {
-     display: none;
-   }
+  .sign-up__button--header, .main-nav__items li:last-of-type {
+    display: none;
+  }
 
-   .logo {
-       height: 50px;
-  width: 35px;
+  .logo {
+    height: 50px;
+    width: 35px;
+  }
 
-   }
+  .links__icons {
+    padding: 6rem 0;
+  }
 
-   .h1 {
-       font-size: 2rem;
+  .about {
+    display: block;
+  }
 
-   }
+  .about img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-   .about {
-     display: block;
-   }
+  .about__chat,
+  .about__reminder {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
 
-   .about img {
-     margin-bottom: 5rem;
-   }
+  .about__reminder {
+    flex-direction: column-reverse;
+  }
 
-   .about__chat {
-     margin-bottom: 5rem;
-   }
-
-   .about__chat,
-   .about__reminder {
-     flex-direction: column;
-     align-items: center;
-   }
-
-   .about__reminder {
-     flex-direction: column-reverse;
-   }
-  
+  .sign-up__button--big {
+    width: 15rem;
+    height: 4rem;
+    background-color: #2b98ea;
+  }
 }
-
-
