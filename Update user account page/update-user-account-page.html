@@ -34,22 +34,22 @@
     <form id="form" action="#">
       <div class="inputBox_name">
         <label for="name">Name</label>
-        <p id="name" placeholder="Enter Your Name" class="input_name"></p>
+        <input disabled type="text" id="name" placeholder="Enter Your Name" class="input_name" />
         <span id="text1"></span>
       </div>
 
       <!-- <h3>Surname</h3> -->
       <div class="inputBox_surname">
         <label for="surname">Surname</label>
-        <p id="surname" class="input_surname" placeholder="Enter Your Surname"></p>
+        <input disabled type="text" id="surname" class="input_surname" placeholder="Enter Your Surname" />
         <span id="text2"></span>
       </div>
 
       <!-- <h3>Email</h3> -->
       <div class="inputBox">
         <label for="email">Email</label>
-        <p type="text" name="" id="email" class="input_email" placeholder="Enter Your Email">
-        </p>
+        <input disabled type="email" name="" id="email" class="input_email" placeholder="Enter Your Email" />
+
         <span id="text"></span>
       </div>
 
@@ -58,7 +58,8 @@
 
       <div class="inputBox_password">
         <label for="password">Password</label>
-        <p type="password" name="" id="password" class="input_password" placeholder="Enter Your Password"></p>
+        <input disabled type="password" name="" id="password" class="input_password"
+          placeholder="Enter Your Password" />
         <span id="text3"></span>
       </div>
 
@@ -83,7 +84,7 @@
     //validation for email
     function validation() {
       var form = document.getElementById("form");
-      var email = document.getElementById("email").innerHTML;
+      var email = document.getElementById("email").value;
       var text = document.getElementById("text");
       var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
@@ -114,7 +115,7 @@
     //validation for name
     function validation1() {
       var form = document.getElementById("form");
-      var name = document.getElementById("name").innerHTML;
+      var name = document.getElementById("name").value;
       console.log(form, name)
       let flag = false;
       var text1 = document.getElementById("text1");
@@ -145,7 +146,7 @@
     //validation for surname
     function validation2() {
       var form = document.getElementById("form");
-      var surname = document.getElementById("surname").innerHTML;
+      var surname = document.getElementById("surname").value;
       var text2 = document.getElementById("text2");
 
       if (surname.length < 4) {
@@ -174,7 +175,7 @@
     //validtion for password
     function validation3() {
       var form = document.getElementById("form");
-      var password = document.getElementById("password").innerHTML;
+      var password = document.getElementById("password").value;
       var text3 = document.getElementById("text3");
 
       if (password.length < 7) {
@@ -199,16 +200,16 @@
         text3.style.color = "yellow";
       }
     }
-    document.getElementById("name").innerHTML = "Cristiano";
-    document.getElementById("surname").innerHTML = "Ronaldo";
-    document.getElementById("email").innerHTML = "cronaldo7@football.com";
-    document.getElementById("password").innerHTML = "imthebest";
+    // form.classList[0] = "Cristiano"
+    // document.getElementById("surname").innerHTML = "Ronaldo";
+    // document.getElementById("email").innerHTML = "cronaldo7@football.com";
+    // document.getElementById("password").innerHTML = "imthebest";
 
     function edit() {
-      document.getElementById("name").contentEditable = "true";
-      document.getElementById("surname").contentEditable = "true";
-      document.getElementById("email").contentEditable = "true";
-      document.getElementById("password").contentEditable = "true";
+      document.getElementById("name").disabled = false;
+      document.getElementById("surname").disabled = false;
+      document.getElementById("email").disabled = false;
+      document.getElementById("password").disabled = false;
       $('#name').focus();
 
 
@@ -216,14 +217,28 @@
     function save() {
       let arr = [...form.classList]
 
-      console.log(arr.includes('valid1'))
+      console.log(arr)
 
-      if (arr.includes('valid1') && arr.includes('valid') && arr.includes('valid2') && arr.includes('valid3')) {
-        document.getElementById("name").contentEditable = "false";
-        document.getElementById("surname").contentEditable = "false";
-        document.getElementById("email").contentEditable = "false";
-        document.getElementById("password").contentEditable = "false";
+      if (arr.includes('valid') && arr.includes('valid1') && arr.includes('valid2') && arr.includes('valid3')) {
+        document.getElementById("name").disabled = true;
+        document.getElementById("surname").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("password").disabled = true;
       }
+    }
+
+    function upperlower() {
+      let str = "HeLlO wOrLd"
+      let str1
+      for (let i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
+          str1 = str.toLowerCase(i)
+        }
+        else {
+          str1 = str.toUpperCase(i)
+        }
+      }
+      console.log(str1)
     }
 
   </script>
