@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sign up with us and we will try our best to monitor your pain level.">
+    <link rel="stylesheet" href="signup.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="logo.png" id="logo"alt="Debbie logo"/>
+      <h1 id="heading">Debbie</h1>
+      </nav>
+    <h2>To get help from Debbie <br />Sign up now !</h2>
+    <img class="image" src="super_woman copy.svg" alt="super woman"/>
+
+    <div class="wrapper">
+      <div>
+        <!-- <h3>Name</h3> -->
+  <form id="form" action="#">
+          <div class="inputBox_name">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Enter Your Name"
+              class="input_name"
+              onkeydown="validation1()"
+            />
+            <span id="text1"></span>
+          </div>
+
+        <!-- <h3>Surname</h3> -->
+          <div class="inputBox_surname">
+            <label for="surname">Surname</label>
+            <input
+              type="text"
+              name=""
+              id="surname"
+              class="input_surname"
+              placeholder="Enter Your Surname"
+              onkeydown="validation2()"
+            />
+            <span id="text2"></span>
+          </div>       
+
+        <!-- <h3>Email</h3> -->
+          <div class="inputBox">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name=""
+              id="email"
+              class="input_email"
+              placeholder="Enter Your Email"
+              onkeydown="validation()"
+            />
+            <span id="text"></span>
+          </div>
+         
+        
+
+      
+          <div class="inputBox_password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name=""
+              id="password"
+              class="input_password"
+              placeholder="Enter Your Password"
+              onkeydown="validation3()"
+            />
+            <span id="text3"></span>
+          </div>
+        
+      </div>
+      <input
+        type="submit"
+        value="Signup"
+        class="button"
+        onclick="validation(),validation1(),validation2(),validation3()"
+      />
+    </div>
+  </form>
+    <img class="heart" src="like.svg" alt="like image">
+
+    
+    <p class="first">Built With</p><img src="like.svg" alt="heart icon" id="hearticonfooter"><p class="second">By the coding cohort</p>
+    
+
+    <script>
+
+     
+      //validation for email
+      function validation() {
+        var form = document.getElementById("form");
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text");
+        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (email.match(pattern)) {
+          form.classList.add("valid");
+          form.classList.remove("invalid");
+          form.classList.remove("mark1");
+          text.innerHTML = "Your Email address is Valid";
+          text.style.color = "#00ff00";
+        } else {
+          form.classList.remove("valid");
+          form.classList.add("invalid");
+          form.classList.remove("mark1");
+
+          text.innerHTML = "Your Email address is Invalid";
+          text.style.color = "#ff0000";
+        }
+        if (email == "") {
+          form.classList.remove("valid");
+          form.classList.remove("invalid");
+          form.classList.add("mark1");
+          text.innerHTML = "This Field cannot be Empty";
+          text.style.color = "yellow";
+        }
+      }
+
+      //validation for name
+      function validation1() {
+        var form = document.getElementById("form");
+        var name = document.getElementById("name").value;
+        var text1 = document.getElementById("text1");
+
+        if (name.length < 4) {
+          form.classList.add("invalid1");
+          form.classList.remove("valid1");
+          form.classList.remove("mark");
+          text1.innerHTML = "Your Name is Invalid";
+          text1.style.color = "#ff0000";
+        } else {
+          form.classList.add("valid1");
+          form.classList.remove("invalid1");
+          form.classList.remove("mark");
+          text1.innerHTML = "Your Name is Valid";
+          text1.style.color = "#00ff00";
+        }
+        if (name == "") {
+          form.classList.remove("valid1");
+          form.classList.remove("invalid1");
+          form.classList.add("mark");
+          text1.innerHTML = "This Field cannot be Empty";
+          text1.style.color = "yellow";
+        }
+      }
+
+      //validation for surname
+      function validation2() {
+        var form = document.getElementById("form");
+        var surname = document.getElementById("surname").value;
+        var text2 = document.getElementById("text2");
+
+        if (surname.length < 4) {
+          form.classList.add("invalid2");
+          form.classList.remove("valid2");
+          form.classList.remove("mark2");
+          text2.innerHTML = "Your Surname is Invalid";
+          text2.style.color = "#ff0000";
+        } else {
+          form.classList.add("valid2");
+          form.classList.remove("invalid2");
+          form.classList.remove("mark2");
+          text2.innerHTML = "Your Surname is Valid";
+          text2.style.color = "#00ff00";
+        }
+        if (surname == "") {
+          form.classList.remove("valid2");
+          form.classList.remove("invalid2");
+          form.classList.add("mark2");
+          text2.innerHTML = "This Field cannot be Empty";
+          text2.style.color = "yellow";
+        }
+      }
+
+      //validtion for password
+      function validation3() {
+        var form = document.getElementById("form");
+        var password = document.getElementById("password").value;
+        var text3 = document.getElementById("text3");
+
+        if (password.length < 7) {
+          form.classList.remove("valid3");
+          form.classList.add("invalid3");
+          form.classList.remove("mark3");
+          text3.innerHTML = "Password must be above 7 characters";
+          text3.style.color = "#ff0000";
+        } else {
+          form.classList.remove("invalid3");
+          form.classList.add("valid3");
+          form.classList.remove("mark3");
+          text3.innerHTML = "Your Password is Valid";
+          text3.style.color = "#00ff00";
+        }
+        if (password == "") {
+          form.classList.remove("invalid3");
+          form.classList.remove("valid3");
+          form.classList.add("mark3");
+          text3.innerHTML = "This Field cannot be Empty";
+          text3.style.color = "yellow";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #b2b6f7;
+
+  font-family: "Lato";
+}
+
+.logo {
+  margin-left: 40px;
+  transform: translate(0%, -170%);
+  width: 70px;
+  height: 70px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#logo {
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+.nav img {
+  width: auto;
+  height: 50px;
+}
+
+#heading {
+  font-size: 30px;
+  margin-right: 47%;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  transform: translate(0%, -260%);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  transform: translate(15%, -260%);
+  margin-left: 44%;
+  margin-top: 140px;
+}
+
+label {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  left: 5px;
+  font-weight: 500;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  max-width: 350px;
+  width: 100%;
+  padding: 25px;
+}
+
+#form {
+  position: relative;
+}
+
+input {
+  width: 300px;
+  border: #979797;
+  background: #d8d8d8;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(48, 42, 42);
+  font-style: 18px;
+}
+/* 
+.input_email {
+  width: 300px;
+  border: #979797;
+  background: #d8d8d8;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(48, 42, 42);
+  font-style: 18px;
+}
+
+.input_name {
+  width: 300px;
+  border: #979797;
+  background: #d8d8d8;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(48, 42, 42);
+  font-style: 18px;
+}
+
+.input_surname {
+  width: 300px;
+  border: #979797;
+  background: #d8d8d8;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(48, 42, 42);
+  font-style: 18px;
+}
+
+.input_password {
+  width: 300px;
+  border: #979797;
+  background: #d8d8d8;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(48, 42, 42);
+  font-style: 18px;
+} */
+
+#text,
+#text1,
+#text2,
+#text3 {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  padding: 5px;
+}
+
+#form.invalid .inputBox::before {
+  content: "";
+  position: absolute;
+  right: 45px;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("invalid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid .inputBox::before {
+  content: "";
+  position: absolute;
+  right: 45px;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("valid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.invalid1 .inputBox_name::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("invalid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid1 .inputBox_name::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("valid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.invalid2 .inputBox_surname::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("invalid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid2 .inputBox_surname::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("valid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.invalid3 .inputBox_password::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("invalid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid3 .inputBox_password::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("valid.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.mark .inputBox_name::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("mark.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.mark1 .inputBox::before {
+  content: "";
+  position: absolute;
+  right: 45px;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("mark.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.mark2 .inputBox_surname::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("mark.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.mark3 .inputBox_password::before {
+  content: "";
+  position: absolute;
+  right: 13%;
+  margin-top: 30px;
+  width: 24px;
+  height: 24px;
+  background: url("mark.png");
+  background-size: cover;
+  z-index: 1000;
+}
+
+.button {
+  display: block;
+  transform: translate(10%, -50%);
+  border: 1px solid#979797;
+  width: 260px;
+  height: 36px;
+
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  background: #2b98ea;
+}
+
+.heart {
+  width: 25px;
+  height: 20px;
+  transform: translate(-2500%, 935%);
+}
+
+#hearticonfooter {
+  transform: translate(180%, -190%);
+  width: 25px;
+  height: 25px;
+}
+
+.first {
+  text-align: center;
+  color: #fff;
+  transform: translate(-5%, 905%);
+}
+.second {
+  text-align: center;
+  color: white;
+  transform: translate(5%, -136%);
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+  .wrapper {
+    transform: translate(-50%, -110%);
+  }
+  img {
+    transform: translate(0%, -270%);
+  }
+  .heart {
+    width: 25px;
+    height: 25px;
+    transform: translate(90%, -40%);
+  }
+  #hearticonfooter {
+    transform: translate(180%, -480%);
+    width: 25px;
+    height: 25px;
+  }
+
+  .first {
+    text-align: center;
+    color: #fff;
+    transform: translate(-5%, 225%);
+  }
+  .second {
+    text-align: center;
+    color: white;
+    transform: translate(8%, -806%);
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+  .wrapper {
+    transform: translate(-50%, -110%);
+  }
+  img {
+    transform: translate(-25%, -270%);
+  }
+  .heart {
+    width: 25px;
+    height: 25px;
+    transform: translate(90%, -40%);
+  }
+  #hearticonfooter {
+    transform: translate(180%, -480%);
+    width: 25px;
+    height: 25px;
+  }
+
+  .first {
+    text-align: center;
+    color: #fff;
+    transform: translate(-5%, 229%);
+  }
+  .second {
+    text-align: center;
+    color: white;
+    transform: translate(12%, -806%);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .wrapper {
+    transform: translate(-50%, -20%);
+  }
+  img {
+    transform: translate(-50%, -310%);
+  }
+  .logo {
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    transform: translate(-50%, -40%);
+    position: absolute;
+  }
+  img {
+    transform: translate(-50%, -300%);
+  }
+  .logo {
+    margin-left: 0;
+  }
+  h2 {
+    transform: translate(0%, -350%);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .wrapper {
+    transform: translate(-50%, -40%);
+  }
+  .heart {
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    margin-left: 5px;
+  }
+  img {
+    transform: translate(-30%, -320%);
+  }
+}
