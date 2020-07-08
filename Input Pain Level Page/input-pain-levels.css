@@ -1,9 +1,19 @@
+.top-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.top-icons img {
+  width: auto;
+  height: 50px;
+}
 #main-heading {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: -100px;
   /* margin-top: ; */
+  font-size: 35px;
+  margin-right: 15px;
 }
 * {
   /* border: 1px solid red; */
@@ -11,9 +21,10 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
 body {
-  height: 100vh;
-  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+  height: 100%;
+  width: 100%;
 
   background: linear-gradient(
     180deg,
@@ -27,7 +38,10 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  opacity: 80%;
+}
+#superwoman {
+  width: 100%;
+  height: auto;
 }
 #heading {
   text-align: center;
@@ -36,27 +50,32 @@ body {
 }
 .save-button {
   color: white;
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   margin-top: 30px;
-
-  width: 210px;
-  height: 57px;
+  cursor: pointer;
+  font-size: 1.2em;
   border-radius: 8px;
   border: 1px solid #34a1f3;
-  background-color: #34a1f3;
+  background-color: #1a7fcc;
 }
 .savebtn {
   text-align: center;
 }
-.save-button {
-  font-size: 1.5em;
-  background-color: #2b98ea;
+
+.save-button:hover {
+  background-color: blue;
 }
 #hearticon {
   color: #ad0ca5;
   height: 1.3em;
   margin-top: 60px;
-  opacity: 60%;
+  opacity: 50%;
+}
+#hearticonfooter {
+  color: #ad0ca5;
+  height: 1.3em;
+  margin-top: 60px;
+  opacity: 50%;
 }
 .heart {
   text-align: center;
@@ -69,11 +88,9 @@ body {
 }
 
 #logoimg {
-  margin-top: 50px;
-  margin-left: 50px;
-  height: 100px;
-  width: 100px;
   /* opacity: 60%; */
+
+  margin-left: 30px;
 }
 
 #finger {
@@ -82,8 +99,8 @@ body {
   width: 30px;
 }
 .fingerimg {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 #askpainlevel {
@@ -132,40 +149,42 @@ body {
 #minus:hover {
   transform: scale(1.2);
 }
+#footer {
+  text-align: center;
+  font-size: small;
+  opacity: 50%;
+  margin-bottom: 40px;
+}
 
 @media (max-width: 55em) {
   html {
-    font-size: 60%;
-  }
-  #logoimg {
-    height: 70px;
-    width: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  #main-heading {
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: -70px;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  html {
     font-size: 80%;
   }
-  #logoimg {
-    height: 70px;
-    width: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
+  #askpainlevel {
+    padding: 20px;
+  }
+
+  .top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   #main-heading {
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: -70px;
+    margin-right: -25px;
+  }
+  #heading {
+    padding: 20px;
+  }
+  .savebtn {
+    margin-top: 30px;
+  }
+  .save-button {
+    padding: 10px 20px !important;
+    margin-top: 30px;
+    font-size: 1.5em;
   }
 }
 
@@ -173,66 +192,96 @@ body {
 
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 80%;
   }
-  #logoimg {
-    height: 70px;
-    width: 70px;
-    margin-left: 20px;
-    margin-top: 20px;
+  #askpainlevel {
+    padding: 20px;
+  }
+
+  .top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   #main-heading {
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: -70px;
+    margin-right: -25px;
+  }
+  #heading {
+    padding: 20px;
+  }
+  .savebtn {
+    margin-top: 30px;
+  }
+  .save-button {
+    padding: 10px 20px !important;
+    margin-top: 30px;
+    font-size: 1.5em;
   }
 }
 
 @media (max-width: 35em) {
   html {
-    font-size: 58%;
+    font-size: 80%;
   }
-  #logoimg {
-    height: 50px;
-    width: 50px;
-    margin-left: 20px;
-    margin-top: 20px;
+  #askpainlevel {
+    padding: 20px;
   }
 
-  #superwomanimg {
-    height: 120px;
-    width: auto;
+  .top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   #main-heading {
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: -50px;
+    margin-right: -30px;
+  }
+  #heading {
+    padding: 20px;
+  }
+  .savebtn {
+    margin-top: 30px;
+  }
+  .save-button {
+    padding: 10px 20px !important;
+    margin-top: 30px;
+    font-size: 1.5em;
   }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 28.75em) {
   html {
-    font-size: 58%;
+    font-size: 80%;
   }
-  .savebtn {
-    margin-top: 100px;
+  #askpainlevel {
+    padding: 20px;
   }
-  #logoimg {
-    height: 30px;
-    width: 30px;
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  #superwomanimg {
-    height: 100px;
-    width: auto;
+
+  .top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   #main-heading {
-    text-align: center;
-    max-width: 100px;
-    margin: 0 auto;
-    margin-top: -30px;
+    margin-right: -20px;
+  }
+  #heading {
+    padding: 20px;
+  }
+  .savebtn {
+    margin-top: 30px;
+  }
+  .save-button {
+    padding: 10px 20px !important;
+    margin-top: 30px;
+    font-size: 1.5em;
   }
 }

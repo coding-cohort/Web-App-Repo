@@ -3,7 +3,17 @@
   padding: 0;
 }
 body {
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  text-align: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
+  );
+  font-family: "Lato";
+  color: #fff
 }
 
 .logo {

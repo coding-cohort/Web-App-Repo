@@ -1,3 +1,219 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  font-family: lato;
+  text-decoration: none;
+    
+}
+
+body {
+  text-align: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
+  );
+  font-family: "Lato";
+  color: #fff;
+  /* padding: 40px; */
+}
+
+main {
+  padding: 0 16%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin: auto;
+}
+
+.logo {
+  height: 100px;
+  width: 75px;
+  margin-top: 40px;
+  margin-left: 50px;
+  
+}
+
+.h1 {
+    font-size: 4rem;
+    padding-top: 30px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+}
+
+
+button {
+  background-color: #2B98EA;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+
+.super_woman {
+    padding-top: 30px;
+    height: 300px;
+    width: 200px;
+
+}
+
+.main-container {
+    /* padding: 40px 40px; */
+    flex-direction: column;
+
+}
+
+.hero-text {
+    padding: 30px 30px;
+    line-height: 1.6;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.sub-text {
+    padding: 40px 20px 40px 20px;
+    line-height: 1.4;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.links__icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+}
+
+.link__icon {
+  width: 10%;
+  max-width: 4rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 3rem;
+  grid-template-areas: ". occupy1"
+                       "occupy2 .";
+}
+
+.about img {
+  width: 4rem;
+}
+
+.about__chat img {
+  margin-right:  2rem;
+}
+.about__reminder img {
+  margin-left: 2rem;
+}
+
+.about__chat,
+.about__reminder {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about__chat {
+  grid-area: occupy1;
+}
+
+.about__reminder {
+  grid-area: occupy2;
+}
+
+.about__header {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+#sign-up {
+  margin: 8rem auto;
+}
+
+.sign-up__button--big {
+  width: 22rem;
+  height: 5rem;
+  background-color: #2B98EA;
+}
+
+.sign-up__button a {
+  font: inherit;
+  color: inherit;
+}
+
+#authors {
+  margin: 8rem auto;
+}
+#authors p {
+  text-align: center;
+}
+#authors img {
+  width: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    margin: 6%;
+  }
+
+  .sign-up__button--header {
+     display: none;
+   }
+
+   .logo {
+       height: 50px;
+  width: 35px;
+
+   }
+
+   .h1 {
+       font-size: 2rem;
+
+   }
+
+   .about {
+     display: block;
+   }
+
+   .about img {
+     margin-bottom: 5rem;
+   }
+
+   .about__chat {
+     margin-bottom: 5rem;
+   }
+
+   .about__chat,
+   .about__reminder {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .about__reminder {
+     flex-direction: column-reverse;
+   }
+  
+}
 
 
