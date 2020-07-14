@@ -6,7 +6,7 @@
   <meta name="description" content="Update the account info page of the user">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="update-user-account-page.css" />
-
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Update Account Info Page</title>
 </head>
@@ -22,7 +22,7 @@
   <div class="img-container">
     <img id="superwomanimg" src="super_woman.png" alt="super woman image">
   </div>
-  <p id="updatetext">Update your account details below</p>
+  <h2 id="heading">Update your account details below</h2>
   <div class="fingerimg">
     <i style="color: transparent;  
     text-shadow: 0 0 0 peachpuff;">&#128073;</i>
@@ -177,12 +177,13 @@
       var form = document.getElementById("form");
       var password = document.getElementById("password").value;
       var text3 = document.getElementById("text3");
+      console.log(password.length)
 
       if (password.length < 7) {
         form.classList.remove("valid3");
         form.classList.add("invalid3");
         form.classList.remove("mark3");
-        text3.innerHTML = "Password must be above 7 characters";
+        text3.innerHTML = "Password must be 7 or above characters";
         text3.style.color = "#ff0000";
       } else {
         form.classList.remove("invalid3");
@@ -200,10 +201,7 @@
         text3.style.color = "yellow";
       }
     }
-    // form.classList[0] = "Cristiano"
-    // document.getElementById("surname").innerHTML = "Ronaldo";
-    // document.getElementById("email").innerHTML = "cronaldo7@football.com";
-    // document.getElementById("password").innerHTML = "imthebest";
+
 
     function edit() {
       document.getElementById("name").disabled = false;
@@ -224,6 +222,7 @@
         document.getElementById("surname").disabled = true;
         document.getElementById("email").disabled = true;
         document.getElementById("password").disabled = true;
+        window.alert('Updated Successfully')
       }
     }
 
