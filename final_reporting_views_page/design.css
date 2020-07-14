@@ -1,0 +1,184 @@
+/* used to design the background of the website */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* the folowing code is for the body */
+body {
+  background-color: #b3b6f9;
+  /* height: 100vh; */
+  font-size: 35px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#logoImg {
+  margin-left: 0px;
+  /* width: 100px;
+  height: 100px;; */
+}
+
+.top-section img {
+  width: auto;
+  height: 50px;
+}
+
+
+/* set the css for debbie text */
+#main-heading {
+  /* font-size: 25px; */
+  margin-left: 3%;
+  color: #fff;
+  text-align: center;
+  /* height: 100px;
+  width: 100px; */
+}
+
+#logoutBtn {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+  float: right;
+  cursor: pointer;
+}
+
+.woman-image {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#woman {
+  width: 100px;
+  height: 100px;
+}
+
+.second-heading {
+  text-align: center;
+}
+
+#firstParagraph {
+  color: #fff;
+}
+
+#secondParagraph {
+  color: #fff;
+  margin-left: 11px;
+}
+
+/*the below class is used for designing the hand */
+.hand-image {
+  text-align: center;
+}
+
+#hand {
+  width: 50px;
+  height: 50px;
+}
+
+canvas {
+  background-color: #fff;
+  height: 50vh;
+}
+/*the below design is for the weekly button*/
+/*.btn btn-secondary dropdown-toggle{*/
+/* .btn {
+  margin-left: 35%;
+  margin-top: 50px;
+  height: 50px;
+  width: 300px;
+  /* text-align: center; */
+/* }  */
+
+/*.btn btn-secondary dropdown-toggle{*/
+.selectDropDown {
+  text-align: center;
+}
+
+select {
+  /* margin-left: 50%; */
+  /* text-align: center; */
+  margin-top: 40px;
+  color: purple;
+  text-transform: uppercase;
+  background: white;
+  width: 230px;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 1px solid #979797;
+}
+
+
+
+
+/* changing the inner text */
+/* select #weekly{
+  text-align: center;
+  /* background-color: red; */
+/* } */
+
+.update {
+  text-align: center;
+}
+
+/*the below desing is for the update account button*/
+.updateAccount {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+
+  cursor: pointer;
+}
+
+.pain {
+  text-align: center;
+}
+
+.enterPainRecord {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+
+
+/* the code is used to display the chart */
+/* .painChart{
+  height: 100;
+  width: 100;
+} */
+
+
+
+/* design of drop down menu */
+/* .dropdown-menu{
+  width: 10%;
+} */
+
+
+/* designing my chart  */
+#myChart {
+  /* margin-top: 100px; */
+  max-width: 750px;
+  /* max-height: 650px; */
+  max-height: 900px;
+  margin: auto;
+}
+
+/*  */
+.myChartClass{
+  text-align: center;
+}
