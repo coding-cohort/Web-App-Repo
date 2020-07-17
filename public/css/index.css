@@ -2,26 +2,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: lato;
+  text-decoration: none;
 }
 
 body {
   text-align: center;
   min-height: 100vh;
+
   background-image: -webkit-linear-gradient(
     top,
-    rgb(144, 126, 126) -100%,
-    rgb(96, 101, 235) 100%
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
   );
-  font-family: 'Lato';
+  font-family: "Lato";
   color: #fff;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  font-size: 18px;
 }
 
 main {
@@ -29,13 +24,13 @@ main {
 }
 
 .header-container {
-  padding: 3rem 10% 1rem 10%;
+  padding: 0 10%;
+  margin: 3rem 0 1rem 0;
 }
 
 .main-nav__items {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -68,12 +63,6 @@ button {
   padding-top: 30px;
   height: 300px;
   width: 200px;
-  margin: auto;
-}
-
-.super_woman img {
-  width: 100%;
-  object-fit: cover;
 }
 
 .main-container {
@@ -131,12 +120,19 @@ button {
   grid-template-rows: auto auto;
   grid-row-gap: 5rem;
   grid-template-areas:
-    '. occupy1'
-    'occupy2 .';
+    ". occupy1"
+    "occupy2 .";
 }
 
 .about img {
   width: 3.5rem;
+}
+
+.about__chat img {
+  margin-right: 2rem;
+}
+.about__reminder img {
+  margin-left: 2rem;
 }
 
 .about__chat,
@@ -192,8 +188,7 @@ button {
     padding: 6%;
   }
 
-  .sign-up__button--header,
-  .main-nav__items li:last-of-type {
+  .sign-up__button--header, .main-nav__items li:last-of-type {
     display: none;
   }
 
