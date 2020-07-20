@@ -2,12 +2,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* the folowing code is for the body */
 body {
   background-color: #b3b6f9;
-  /* height: 100vh; */
   font-size: 35px;
 }
 
@@ -30,7 +30,6 @@ body {
   width: auto;
   height: 50px;
 }
-
 
 /* set the css for debbie text */
 #main-heading {
@@ -59,7 +58,7 @@ body {
 
 #woman {
   width: 100px;
-  height: 100px;
+  margin: 10px auto;
 }
 
 .second-heading {
@@ -101,6 +100,7 @@ canvas {
 
 /*.btn btn-secondary dropdown-toggle{*/
 .selectDropDown {
+  margin: auto;
   text-align: center;
 }
 
@@ -117,9 +117,6 @@ select {
   border-radius: 10px;
   border: 1px solid #979797;
 }
-
-
-
 
 /* changing the inner text */
 /* select #weekly{
@@ -153,21 +150,16 @@ select {
   cursor: pointer;
 }
 
-
-
 /* the code is used to display the chart */
 /* .painChart{
   height: 100;
   width: 100;
 } */
 
-
-
 /* design of drop down menu */
 /* .dropdown-menu{
   width: 10%;
 } */
-
 
 /* designing my chart  */
 #myChart {
@@ -179,6 +171,6 @@ select {
 }
 
 /*  */
-.myChartClass{
+.myChartClass {
   text-align: center;
 }

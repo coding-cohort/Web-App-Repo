@@ -8,9 +8,8 @@
         content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
     <meta name="theme-color" content="#7b7fec">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/input-pain-levels.css" />
-
-    <script src="input-pain-level.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <title>Input Pain Levels Page</title>
 </head>
@@ -18,13 +17,13 @@
 <body>
     <main>
         <nav class="top-icons">
-            <img id="logoimg" src="Logo.png" alt="logo for website with letters D E, short for Debbie">
+            <img id="logoimg" src="./public/images/Logo.svg" alt="logo for website with letters D E, short for Debbie">
             <h1 id="main-heading">Debbie</h1>
             <button
                 style="background: transparent;border: none;font-size: 2em; color: black;text-align: center;color: rgb(255, 255, 255);cursor: pointer;margin-right: 30px;">X</button>
         </nav>
         <div class="img-container">
-            <img id="superwomanimg" src="super_woman.png" alt="super woman image">
+            <img id="superwomanimg" src="./public/images/super_woman.svg" alt="super woman image">
         </div>
         <h2 id="heading">Let Debbie help monitor your pain</h2>
 
@@ -45,11 +44,13 @@
 
         </div>
         <div class="heart">
-            <img src="Path.png" alt="heart icon" id="hearticon">
+            <img src="./public/images/like.svg" alt="heart icon" id="hearticon">
         </div>
-        <footer id="footer">Built with <img src="Path.png" alt="heart icon" id="hearticonfooter"> by the coding cohort
+        <footer id="footer">Built with <img src="./public/images/like.svg" alt="heart icon" id="hearticonfooter"> by the
+            Coding Cohort
         </footer>
     </main>
+    <script src="./public/js/input-pain-level.js"></script>
 </body>
 
 </html>

@@ -7,10 +7,10 @@
 body {
   text-align: center;
   min-height: 100vh;
-  background-image: -webkit-linear-gradient(
-    top,
-    rgb(144, 126, 126) -100%,
-    rgb(96, 101, 235) 100%
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
   );
   font-family: 'Lato';
   color: #ffffff;
@@ -26,15 +26,17 @@ p {
 }
 
 button {
-  background-color: #4d6577;
-  width: 150px;
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
+  border: 1px solid#979797;
+  width: 160px;
+  height: auto;
+  color: #fff;
+  font-size: 0.9375em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  background: #2b98ea;
+  padding: 10px;
 }
 
 main {
@@ -69,10 +71,8 @@ main {
 }
 
 .super_woman {
-  padding-top: 30px;
-  height: 300px;
-  width: 200px;
-  margin: auto;
+  width: 100px;
+  margin: 10px auto;
 }
 
 .super_woman img {

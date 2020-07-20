@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) -100%,
+    rgba(123, 127, 236, 1) 100%
+  );
+  font-family: 'Lato';
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
 .top-icons {
   display: flex;
   flex-direction: row;
@@ -5,6 +26,7 @@
   margin-top: 50px;
   margin-left: 30px;
   margin-right: 30px;
+  width: 100%;
 }
 .top-icons img {
   width: auto;
@@ -19,61 +41,22 @@
 }
 #heading {
   text-align: center;
-  font-weight: lighter;
+  font-weight: 200;
   letter-spacing: 0.1em;
+  width: 70%;
+  margin: auto;
 }
 .img-container {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-html {
-  min-height: 100%;
-  overflow-y: scroll;
-}
-
-body {
-  min-height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) -100%,
-    rgba(123, 127, 236, 1) 100%
-  );
-  font-family: "Lato";
-  color: #fff;
-}
-
-/* .logo {
-  margin-left: 40px;
-  transform: translate(0%, -170%);
-  width: 70px;
-  height: 70px;
-} */
-
-/* h1 {
-  text-align: center;
-  color: #fff;
-  transform: translate(0%, -550%);
-} */
-
-h2 {
-  text-align: center;
-  color: #fff;
-  /* transform: translate(0%, -350%); */
+  width: 100px;
+  margin: 10px auto;
 }
 
 .fingerimg {
   display: flex;
   justify-content: center;
-
   margin-top: 30px;
-  margin-bottom: 40px;
 }
+
 #edittext {
   margin-left: 30px;
   font-size: 1.3em;
@@ -83,7 +66,7 @@ h2 {
   border: none;
 }
 label {
-  font-size: 1.25em;
+  font-size: 1.6em;
   color: white;
   letter-spacing: 1px;
   display: flex;
@@ -104,17 +87,15 @@ label {
 
 form p,
 input {
-  width: 90%;
+  width: 100%;
   margin-right: 13px;
+  margin-top: 10px;
   border: #979797;
-  background: white;
-  padding: 10px;
+  background: #eae7e7;
+  padding: 15px 10px;
   text-align: left;
-  /* margin: 30px; */
-  /* margin-right: 10px; */
-  border-radius: 6px;
   color: black;
-  /* font-style: 18px; */
+  font-size: 20px;
 }
 
 #text,
@@ -130,141 +111,141 @@ input {
 }
 
 #form.invalid .inputBox::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 45px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("invalid.png");
+  background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.valid .inputBox::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 45px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("valid.png");
+  background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
 }
 #form.mark1 .inputBox::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 45px;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("mark.png");
+  background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.invalid1 .inputBox_name::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("invalid.png");
+  background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.valid1 .inputBox_name::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("valid.png");
+  background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
 }
 #form.mark .inputBox_name::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("mark.png");
+  background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.invalid2 .inputBox_surname::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("invalid.png");
+  background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.valid2 .inputBox_surname::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("valid.png");
+  background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
 }
 #form.mark2 .inputBox_surname::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("mark.png");
+  background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.invalid3 .inputBox_password::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("invalid.png");
+  background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
 }
 
 #form.valid3 .inputBox_password::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("valid.png");
+  background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
 }
 #form.mark3 .inputBox_password::before {
-  content: "";
+  content: '';
   position: absolute;
   right: 13%;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 24px;
   height: 24px;
-  background: url("mark.png");
+  background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
 }
@@ -273,12 +254,9 @@ input {
   border: 1px solid#979797;
   width: 160px;
   height: auto;
-
   color: #fff;
   font-size: 0.9375em;
   cursor: pointer;
-  margin-top: 40px;
-
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
@@ -291,7 +269,6 @@ input {
 #hearticon {
   color: #ad0ca5;
   height: 1.3em;
-  margin-top: 60px;
   opacity: 50%;
 }
 #hearticonfooter {
@@ -320,9 +297,6 @@ input {
 }
 
 @media (max-width: 55em) {
-  html {
-    font-size: 80%;
-  }
   #askpainlevel {
     padding: 20px;
   }
@@ -337,11 +311,6 @@ input {
   }
   #main-heading {
     margin-right: -25px;
-  }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
   }
   .savebtn {
     margin-top: 30px;
@@ -356,9 +325,6 @@ input {
 /* 980px / 16px = 61.25em */
 
 @media (max-width: 61.25em) {
-  html {
-    font-size: 80%;
-  }
   #askpainlevel {
     padding: 20px;
   }
@@ -373,11 +339,6 @@ input {
   }
   #main-heading {
     margin-right: -25px;
-  }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
   }
   .savebtn {
     margin-top: 30px;
@@ -392,6 +353,9 @@ input {
   html {
     font-size: 80%;
   }
+  body {
+    height: 100%;
+  }
   #askpainlevel {
     padding: 20px;
   }
@@ -406,11 +370,6 @@ input {
   }
   #main-heading {
     margin-right: -25px;
-  }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
   }
 
   .save-button {
@@ -429,9 +388,6 @@ input {
   #footer {
     margin-top: 50px;
     margin-bottom: 30px;
-  }
-  .heart {
-    margin-top: 30px;
   }
 }
 
@@ -454,12 +410,6 @@ input {
   #main-heading {
     margin-right: -30px;
   }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
-  }
-
   .save-button {
     padding: 10px 20px !important;
     margin-top: 30px;
@@ -476,9 +426,6 @@ input {
   #footer {
     margin-top: 10px;
     margin-bottom: 30px;
-  }
-  .heart {
-    margin-top: 30px;
   }
 }
 
@@ -500,11 +447,6 @@ input {
   }
   #main-heading {
     margin-right: -20px;
-  }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
   }
   .savebtn {
     margin-top: 80px;
@@ -540,11 +482,6 @@ input {
   #main-heading {
     margin-right: -25px;
   }
-  #heading {
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
-  }
 
   .save-button {
     padding: 10px 20px !important;
@@ -565,5 +502,11 @@ input {
     height: 1.3em;
     margin-top: 100px;
     opacity: 50%;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  body {
+    height: 100vh;
   }
 }
