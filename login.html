@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Welcome Back! Log in to continue monitoring your everyday pain.">
+    <link rel="stylesheet" href="./public/css/update-user-account-page.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Back! Log in to continue monitoring your everyday pain.</title>
+</head>
+
+<body>
+    <nav class="top-icons">
+        <img id="logoimg" src="./public/images/Logo.svg" alt="logo for website with letters D E, short for Debbie">
+        <h1 id="main-heading">Debbie</h1>
+        <button
+            style="background: transparent;border: none;font-size: 2em; color: black;text-align: center;color: rgb(255, 255, 255);cursor: pointer;margin-right: 30px;">X</button>
+    </nav>
+
+    <div class="img-container">
+        <img id="superwomanimg" src="./public/images/super_woman.svg" alt="super woman image">
+    </div>
+    <h2 id="heading">Managing pain can be hard. Talk to Debbie</h2>
+    <div class="wrapper">
+        <form id="form" action="#">
+            <div class="inputBox_name">
+                <label for="username">Username</label>
+                <input disabled type="text" id="username" placeholder="Enter Your username" class="input_name" />
+                <span id="text1"></span>
+            </div>
+            <div class="inputBox_password">
+                <label for="password">Password</label>
+                <input disabled type="password" name="" id="password" class="input_password"
+                    placeholder="Enter Your Password" />
+                <span id="text3"></span>
+            </div>
+            <input type="submit" value="Log In" class="button" onclick="validation1(),validation3(),save()" />
+        </form>
+    </div>
+    <div class="heart">
+        <img src="./public/images/like.svg" alt="heart icon" id="hearticon">
+    </div>
+    <footer id="footer">Built with <img src="./public/images/like.svg" alt="heart icon" id="hearticonfooter"> by the
+        Coding Cohort
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/js/usersideValidation.js"></script>
+    <script>
+        edit();
+    </script>
+</body>
+
+</html>

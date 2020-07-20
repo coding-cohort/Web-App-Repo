@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Sign up with us and we will try our best to monitor your pain level.">
+  <meta name="description" content="Update the account info page of the user">
   <link rel="stylesheet" href="./public/css/update-user-account-page.css" />
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign Up to Start With Us. We are really excited!</title>
+  <title>Update Account Info Page</title>
 </head>
 
 <body>
@@ -22,7 +22,12 @@
   <div class="img-container">
     <img id="superwomanimg" src="./public/images/super_woman.svg" alt="super woman image">
   </div>
-  <h2 id="heading">To get help from Debbie sign up now!</h2>
+  <h2 id="heading">Update your account details below</h2>
+  <div class="fingerimg">
+    <i style="color: transparent;  
+    text-shadow: 0 0 0 peachpuff;">&#128073;</i>
+    <button id="edittext" onclick="edit()">Edit >></button>
+  </div>
   <div class="wrapper">
 
     <!-- <h3>Name</h3> -->
@@ -55,7 +60,7 @@
         <span id="text3"></span>
       </div>
 
-      <input type="submit" value="Sign Up" class="button"
+      <input type="submit" value="Save" class="button"
         onclick="validation1(),validation(),validation2(),validation3(),save()" />
 
     </form>
@@ -69,9 +74,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./public/js/usersideValidation.js"></script>
-  <script>
-    edit();
-  </script>
 </body>
 
 </html>
