@@ -229,6 +229,47 @@ main {
   padding-bottom: 50px;
 }
 
+
+@media screen and (max-width: 768px) {
+
+  .about__chat,
+  .about__reminder {
+     display: none;
+  }
+
+  .about__chat {
+     display: none;
+  }
+
+  .about__reminder {
+     display: none;
+  }
+  
+
+   .logo {
+       height: 50px;
+  width: 35px;
+
+   }
+
+   #brand-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding-right: 80px;
+  padding-top: 20px;
+
+  
+}
+
+
+   .icon {
+     width: 20px;
+     height: 20px;
+   }
+  
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding: 0px 16%;
@@ -297,48 +338,3 @@ main {
 
 
 
-@media screen and (max-width: 768px) {
-
-  .about img {
-    display: none;
-  }
-
-  .about__chat,
-  .about__reminder {
-     display: none;
-  }
-
-  .about__chat {
-     display: none;
-  }
-
-  .about__reminder {
-     display: none;
-  }
-  
-  button {
-     display: none;
-   }
-
-   .logo {
-       height: 50px;
-  width: 35px;
-
-   }
-
-   #brand-name {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  text-align: center;
-
-  
-}
-
-
-   .icon {
-     width: 20px;
-     height: 20px;
-   }
-  
-}
