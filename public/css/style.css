@@ -1,19 +1,23 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  font-family: lato;
+  text-decoration: none;
 }
 
 body {
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(
-    180deg,
+  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
+
+  background-image: -webkit-linear-gradient(
+    top,
     rgba(255, 255, 255, 1) -100%,
     rgba(123, 127, 236, 1) 100%
   );
-  font-family: 'Lato';
-  color: #ffffff;
+  font-family: "Lato";
+  color: #fff
 }
 
 a {
@@ -81,12 +85,21 @@ main {
   
 }
 
-.brand-name {
+#brand-name {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.01em;
   text-align: center;
+  padding-left: 5.5rem;
   
+}
+
+.brand-name-xnav {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: center;
+
 }
 
 .super_woman {
@@ -185,7 +198,7 @@ main {
 
 .sign-up__button a {
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /******************** Footer  ********************/
@@ -229,6 +242,8 @@ main {
     width: 22rem;
     height: 3rem;
   }
+
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -245,6 +260,7 @@ main {
     height: 75px;
     width: 50px;
   }
+   
 
   .about {
     display: grid;
@@ -275,6 +291,54 @@ main {
 
   .about__reminder {
     grid-area: occupy2;
-    text-align: right;
+    text-align: left;
   }
+};
+
+
+
+@media screen and (max-width: 768px) {
+
+  .about img {
+    display: none;
+  }
+
+  .about__chat,
+  .about__reminder {
+     display: none;
+  }
+
+  .about__chat {
+     display: none;
+  }
+
+  .about__reminder {
+     display: none;
+  }
+  
+  button {
+     display: none;
+   }
+
+   .logo {
+       height: 50px;
+  width: 35px;
+
+   }
+
+   #brand-name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  
+}
+
+
+   .icon {
+     width: 20px;
+     height: 20px;
+   }
+  
 }
