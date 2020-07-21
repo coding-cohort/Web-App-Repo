@@ -32,15 +32,31 @@ button {
   color: #fff;
   font-size: 0.9375em;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: 600;
   text-align: center;
   background: #2b98ea;
   padding: 10px;
+  border-radius: 4px;
 }
+
+.close-link{
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 100;
+  opacity: 50%;
+}
+
+.close-link a {
+  color: #ffffff;
+  
+
+}
+
 
 main {
   padding: 0 6%;
+  
+
 }
 
 .header-container {
@@ -62,16 +78,20 @@ main {
 .logo {
   height: 50px;
   width: 35px;
+  
 }
 
 .brand-name {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.01em;
+  text-align: center;
+  
 }
 
 .super_woman {
-  width: 100px;
+  padding-top: 3rem;
+  width: 150px;
   margin: 10px auto;
 }
 
@@ -89,6 +109,7 @@ main {
 
 .header-section__about-italic {
   font-style: italic;
+  font-weight: 300;
 }
 
 .header-section button:first-of-type {
@@ -98,6 +119,7 @@ main {
 .sub-text {
   padding: 40px 20px 40px 20px;
   line-height: 1.4;
+  font-weight: 300;
 }
 
 /******************** Info Section  ********************/
@@ -116,6 +138,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 6rem 0;
+  opacity: 50%;
 }
 
 .link__icon {
@@ -146,29 +169,51 @@ main {
   flex-direction: column-reverse;
 }
 
+.chat-icon {
+  opacity: 50%;
+}
+
+.bell-icon {
+  opacity: 50%;
+}
+
+
 #sign-up {
   margin: 8rem auto;
 }
 
-.sign-up__button--big {
-  width: 15rem;
-  height: 4rem;
-}
 
 .sign-up__button a {
-  font: inherit;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 /******************** Footer  ********************/
 
-#authors {
-  margin: 0 0 8rem 0;
+.spacer2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 
-#authors img {
-  width: 2rem;
-  margin: 0 0.5rem;
+
+.icon-small {
   vertical-align: middle;
+  padding-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  line-height: 150px;
+  font-size: 3em;
+  text-align: center;
+  opacity: 0.5;
+
+}
+
+.end-text {
+  font-size: 10px;
+  opacity: 60%;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -182,7 +227,7 @@ main {
 
   .sign-up__button--big {
     width: 22rem;
-    height: 5rem;
+    height: 3rem;
   }
 }
 

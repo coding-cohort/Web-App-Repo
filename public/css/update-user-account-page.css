@@ -1,20 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) -100%,
-    rgba(123, 127, 236, 1) 100%
-  );
-  font-family: 'Lato';
-  color: #fff;
-}
 
 h2 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   text-align: center;
   color: #fff;
 }
@@ -32,16 +20,10 @@ h2 {
   width: auto;
   height: 50px;
 }
-#logoimg {
-  margin-left: 30px;
-}
-#main-heading {
-  font-size: 2.18em;
-  margin-right: 15px;
-}
-#heading {
+
+#heading-signup {
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0.1em;
   width: 70%;
   margin: auto;
@@ -51,11 +33,6 @@ h2 {
   margin: 10px auto;
 }
 
-.fingerimg {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
 
 #edittext {
   margin-left: 30px;
@@ -65,6 +42,7 @@ h2 {
   color: white;
   border: none;
 }
+
 label {
   font-size: 1.6em;
   color: white;
@@ -91,6 +69,7 @@ input {
   margin-right: 13px;
   margin-top: 10px;
   border: #979797;
+  border-radius: 4px;
   background: #eae7e7;
   padding: 15px 10px;
   text-align: left;
@@ -108,6 +87,7 @@ input {
   font-style: italic;
   text-align: left;
   padding: 15px;
+
 }
 
 #form.invalid .inputBox::before {
@@ -131,8 +111,10 @@ input {
   height: 24px;
   background: url('../images/valid.png');
   background-size: cover;
-  z-index: 1000;
+  z-index: 1000; 
+  
 }
+
 #form.mark1 .inputBox::before {
   content: '';
   position: absolute;
@@ -143,6 +125,7 @@ input {
   background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
+  
 }
 
 #form.invalid1 .inputBox_name::before {
@@ -155,6 +138,7 @@ input {
   background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
+ 
 }
 
 #form.valid1 .inputBox_name::before {
@@ -167,6 +151,7 @@ input {
   background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
+  
 }
 #form.mark .inputBox_name::before {
   content: '';
@@ -178,6 +163,7 @@ input {
   background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
+  
 }
 
 #form.invalid2 .inputBox_surname::before {
@@ -190,6 +176,7 @@ input {
   background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
+ 
 }
 
 #form.valid2 .inputBox_surname::before {
@@ -202,6 +189,7 @@ input {
   background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
+ 
 }
 #form.mark2 .inputBox_surname::before {
   content: '';
@@ -213,6 +201,7 @@ input {
   background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
+  
 }
 
 #form.invalid3 .inputBox_password::before {
@@ -225,6 +214,7 @@ input {
   background: url('../images/invalid.png');
   background-size: cover;
   z-index: 1000;
+  
 }
 
 #form.valid3 .inputBox_password::before {
@@ -237,6 +227,7 @@ input {
   background: url('../images/valid.png');
   background-size: cover;
   z-index: 1000;
+ 
 }
 #form.mark3 .inputBox_password::before {
   content: '';
@@ -248,19 +239,21 @@ input {
   background: url('../images/mark.png');
   background-size: cover;
   z-index: 1000;
+
 }
 
 .button {
-  border: 1px solid#979797;
+ border: 1px solid#979797;
   width: 160px;
   height: auto;
   color: #fff;
   font-size: 0.9375em;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: 600;
   text-align: center;
   background: #2b98ea;
+  padding: 10px;
+  
 }
 
 .heart {
@@ -276,6 +269,7 @@ input {
   height: 1.3em;
   margin-top: 60px;
   opacity: 50%;
+  vertical-align: middle;
 }
 #footer {
   text-align: center;
