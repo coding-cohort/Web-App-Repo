@@ -1,18 +1,3 @@
-
-#brand-name-xnav {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  text-align: center;
-
-}
-
-#heading-signup {
-	font-weight: 400;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
 #edittext {
   margin-left: 30px;
   font-size: 1.3em;
@@ -31,195 +16,195 @@ label {
 }
 
 .wrapper {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 600px;
-	width: 100%;
-	padding: 25px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
 }
 
 #form {
-	position: relative;
+  position: relative;
 }
 
 form p,
 input {
-	width: 100%;
-	margin-right: 13px;
-	margin-top: 20px;
-	border: #979797;
-	border-radius: 4px;
-	background: #eae7e7;
-	padding: 20px 10px;
-	text-align: left;
-	color: black;
-	font-size: 20px;
+  width: 100%;
+  margin-right: 13px;
+  margin-top: 20px;
+  border: #979797;
+  border-radius: 4px;
+  background: #eae7e7;
+  padding: 20px 10px;
+  text-align: left;
+  color: black;
+  font-size: 20px;
 }
 
 #text,
 #text1,
 #text2,
 #text3 {
-	display: block;
-	color: #000;
-	font-weight: 300;
-	font-style: italic;
-	text-align: left;
-	padding: 15px;
+  display: block;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+  padding: 15px;
 }
 
 #form.invalid .inputBox::before {
-	content: '';
-	position: absolute;
-	right: 45px;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/invalid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 45px;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/invalid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.valid .inputBox::before {
-	content: '';
-	position: absolute;
-	right: 45px;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/valid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 45px;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/valid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.mark1 .inputBox::before {
-	content: '';
-	position: absolute;
-	right: 45px;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/mark.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 45px;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/mark.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.invalid1 .inputBox_name::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/invalid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/invalid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.valid1 .inputBox_name::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/valid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/valid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 #form.mark .inputBox_name::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/mark.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/mark.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.invalid2 .inputBox_surname::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/invalid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/invalid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.valid2 .inputBox_surname::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/valid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/valid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 #form.mark2 .inputBox_surname::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/mark.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/mark.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.invalid3 .inputBox_password::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/invalid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/invalid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 #form.valid3 .inputBox_password::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/valid.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/valid.png');
+  background-size: cover;
+  z-index: 1000;
 }
 #form.mark3 .inputBox_password::before {
-	content: '';
-	position: absolute;
-	right: 13%;
-	margin-top: 50px;
-	width: 24px;
-	height: 24px;
-	background: url('../images/mark.png');
-	background-size: cover;
-	z-index: 1000;
+  content: '';
+  position: absolute;
+  right: 13%;
+  margin-top: 50px;
+  width: 24px;
+  height: 24px;
+  background: url('../images/mark.png');
+  background-size: cover;
+  z-index: 1000;
 }
 
 .button {
-	border: 1px solid#979797;
-	width: 160px;
-	height: auto;
-	color: #fff;
-	font-size: 0.9375em;
-	cursor: pointer;
-	font-weight: 600;
-	text-align: center;
-	background: #2b98ea;
-	padding: 10px;
+  border: 1px solid#979797;
+  width: 160px;
+  height: auto;
+  color: #fff;
+  font-size: 0.9375em;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  background: #2b98ea;
+  padding: 10px;
 }
 
 .heart {
@@ -228,63 +213,63 @@ input {
 }
 
 #hearticon {
-	text-align: center;
-	height: 20px;
+  text-align: center;
+  height: 20px;
   width: 20px;
   opacity: 50%;
 }
 
 @media screen and (max-width: 768px) {
-	.logo {
-		height: 50px;
-		width: 35px;
-	}
+  .logo {
+    height: 50px;
+    width: 35px;
+  }
 
-	#brand-name-xnav {
-		font-size: 1.5rem;
-		font-weight: 400;
-		letter-spacing: 0.01em;
-		padding-top: 20px;
-	}
+  #brand-name-xnav {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    padding-top: 20px;
+  }
 
-	.icon {
-		width: 20px;
-		height: 20px;
-	}
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 
-	.sign-up__button {
-		border: 1px solid#979797;
-		width: 160px;
-		height: auto;
-		color: #fff;
-		font-size: 0.9375em;
-		cursor: pointer;
-		font-weight: 600;
-		text-align: center;
-		background: #2b98ea;
-		padding: 10px;
-		border-radius: 4px;
-	}
+  .sign-up__button {
+    border: 1px solid#979797;
+    width: 160px;
+    height: auto;
+    color: #fff;
+    font-size: 0.9375em;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    background: #2b98ea;
+    padding: 10px;
+    border-radius: 4px;
+  }
 }
 @media screen and (min-width: 768px) {
-	main {
-		padding: 0px 16%;
-	}
+  main {
+    padding: 0px 16%;
+  }
 
-	.links__icons {
-		padding: 6rem 3rem;
-	}
+  .links__icons {
+    padding: 6rem 3rem;
+  }
 
-	.sign-up__button--big {
-		width: 22rem;
-		height: 3rem;
-		border: 1px solid#979797;
-		color: #fff;
-		font-size: 1.5rem;
-		cursor: pointer;
-		font-weight: 600;
-		text-align: center;
-		background: #2b98ea;
-		padding: 10px;
-	}
+  .sign-up__button--big {
+    width: 22rem;
+    height: 3rem;
+    border: 1px solid#979797;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    background: #2b98ea;
+    padding: 10px;
+  }
 }

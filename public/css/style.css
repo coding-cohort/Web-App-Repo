@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
-  font-family: lato;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
 }
 
@@ -10,14 +12,12 @@ body {
   text-align: center;
   min-height: 100vh;
   /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
-
   background-image: -webkit-linear-gradient(
     top,
     rgba(255, 255, 255, 1) -100%,
     rgba(123, 127, 236, 1) 100%
   );
-  font-family: "Lato";
-  color: #fff
+  color: #fff;
 }
 
 a {
@@ -43,7 +43,7 @@ button {
   border-radius: 4px;
 }
 
-.close-link{
+.close-link {
   font-size: 4rem;
   color: #ffffff;
   font-weight: 100;
@@ -52,15 +52,10 @@ button {
 
 .close-link a {
   color: #ffffff;
-  
-
 }
-
 
 main {
   padding: 0 6%;
-  
-
 }
 
 .header-container {
@@ -82,7 +77,6 @@ main {
 .logo {
   height: 50px;
   width: 35px;
-  
 }
 
 #brand-name {
@@ -91,7 +85,6 @@ main {
   letter-spacing: 0.01em;
   text-align: center;
   padding-left: 5.5rem;
-  
 }
 
 .brand-name-xnav {
@@ -99,7 +92,6 @@ main {
   font-weight: 400;
   letter-spacing: 0.01em;
   text-align: center;
-
 }
 
 .super_woman {
@@ -111,6 +103,19 @@ main {
 .super_woman img {
   width: 100%;
   object-fit: cover;
+}
+
+#heading {
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.fingerimg {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .header-section__about {
@@ -190,11 +195,9 @@ main {
   opacity: 50%;
 }
 
-
 #sign-up {
   margin: 8rem auto;
 }
-
 
 .sign-up__button a {
   font-size: 1.5em;
@@ -202,13 +205,22 @@ main {
 }
 
 /******************** Footer  ********************/
+.heart {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+#hearticon {
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  opacity: 50%;
+}
 
 .spacer2 {
   padding-top: 100px;
   padding-bottom: 100px;
-
 }
-
 
 .icon-small {
   vertical-align: middle;
@@ -220,7 +232,6 @@ main {
   font-size: 3em;
   text-align: center;
   opacity: 0.5;
-
 }
 
 .end-text {
@@ -229,45 +240,37 @@ main {
   padding-bottom: 50px;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .about__chat,
   .about__reminder {
-     display: none;
+    display: none;
   }
 
   .about__chat {
-     display: none;
+    display: none;
   }
 
   .about__reminder {
-     display: none;
+    display: none;
   }
-  
 
-   .logo {
-       height: 50px;
-  width: 35px;
+  .logo {
+    height: 50px;
+    width: 35px;
+  }
 
-   }
+  #brand-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    padding-right: 80px;
+    padding-top: 20px;
+  }
 
-   #brand-name {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  padding-right: 80px;
-  padding-top: 20px;
-
-  
-}
-
-
-   .icon {
-     width: 20px;
-     height: 20px;
-   }
-  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -283,8 +286,6 @@ main {
     width: 22rem;
     height: 3rem;
   }
-
- 
 }
 
 @media screen and (min-width: 1024px) {
@@ -301,7 +302,6 @@ main {
     height: 75px;
     width: 50px;
   }
-   
 
   .about {
     display: grid;
@@ -334,7 +334,4 @@ main {
     grid-area: occupy2;
     text-align: left;
   }
-};
-
-
-
+}

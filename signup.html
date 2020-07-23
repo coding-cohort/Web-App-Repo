@@ -4,80 +4,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="description" content="Sign up with us and we will try our best to monitor your pain level.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./public/css/update-user-account-page.css" />
   <link rel="stylesheet" type="text/css" href="./public/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;1,300;1,200;1,400&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;1,300;1,200;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
   <title>Sign Up to Start With Us. We are really excited!</title>
 </head>
 
 <body>
-    <header class="header-container">
-      <nav>
-        <ul class="main-nav__items">
-          
-          <li>
-            <img class="logo" src="./public/images/Logo.svg" alt="logo">
-          </li>
-          <li>
-            <h1 id="brand-name-xnav">Debbie</h1>
-          </li>
-          <li>
-           <a class="close-link" href="./index.html">X</a>
-          </li>
-        </ul>
-        <div class="super_woman"><img src="./public/images/super_woman.svg" alt="super_woman_img"></div>
-      </nav>
+  <header class="header-container">
+    <nav>
+      <ul class="main-nav__items">
+        <li>
+          <img class="logo" src="./public/images/Logo.svg" alt="logo">
+        </li>
+        <li>
+          <h1 id="brand-name-xnav">Debbie</h1>
+        </li>
+        <li>
+          <a class="close-link" href="./index.html">X</a>
+        </li>
+      </ul>
+      <div class="super_woman"><img src="./public/images/super_woman.svg" alt="super_woman_img"></div>
+    </nav>
+  </header>
 
-    </header>
- 
-  <h2 id="heading-signup">To get help from Debbie sign up now!</h2>
-  
+  <h2 id="heading">To get help from Debbie sign up now!</h2>
   <div class="wrapper">
-
-    <!-- <h3>Name</h3> -->
     <form id="form" action="#">
       <div class="inputBox_name">
         <label for="name">Name</label>
         <input disabled type="text" id="name" placeholder="Enter Your Name" class="input_name" />
         <span id="text1"></span>
       </div>
-
-      <!-- <h3>Surname</h3> -->
       <div class="inputBox_surname">
         <label for="surname">Surname</label>
         <input disabled type="text" id="surname" class="input_surname" placeholder="Enter Your Surname" />
         <span id="text2"></span>
       </div>
-
-      <!-- <h3>Email</h3> -->
       <div class="inputBox">
         <label for="email">Email</label>
         <input disabled type="email" name="" id="email" class="input_email" placeholder="Enter Your Email" />
-
         <span id="text"></span>
       </div>
-
       <div class="inputBox_password">
         <label for="password">Password</label>
         <input disabled type="password" name="" id="password" class="input_password"
           placeholder="Enter Your Password" />
         <span id="text3"></span>
       </div>
-
       <input type="submit" value="Sign Up Now" class="sign-up__button sign-up__button--big"
         onclick="validation1(),validation(),validation2(),validation3(),save()" />
-
     </form>
   </div>
-  
+
   <div class="heart">
     <img src="./public/images/like.svg" alt="heart icon" id="hearticon">
   </div>
-   <div class="spacer2">
-     <div class="end-text">Built with <img src="./public/images/like.svg" alt="heart-icon" class="icon-small"> by the
-       coding cohort</div>
-   </div>
+  <div class="spacer2">
+    <div class="end-text">Built with <img src="./public/images/like.svg" alt="heart-icon" class="icon-small"> by the
+      coding cohort</div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

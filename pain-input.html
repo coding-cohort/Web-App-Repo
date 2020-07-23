@@ -8,52 +8,56 @@
         content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
     <meta name="theme-color" content="#7b7fec">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="input-pain-levels.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300;1,400&display=swap"
-        rel="stylesheet">
-
-    <script src="input-pain-level.js"></script>
-
-    <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/input-pain-levels.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' <title>Input Pain Levels Page</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/images/Logo.svg" type="image/x-icon">
+    <title>Input Pain Levels Page</title>
 </head>
 
 <body>
-    <main>
-        <nav class="top-icons">
-            <img id="logoimg" src="./public/images/Logo.svg" alt="logo for website with letters D E, short for Debbie">
-            <h1 id="main-heading">Debbie</h1>
-            <button id="cancel">X</button>
+    <header class="header-container">
+        <nav>
+            <ul class="main-nav__items">
+                <li>
+                    <img class="logo" src="./public/images/Logo.svg" alt="logo">
+                </li>
+                <li>
+                    <h1 id="brand-name-xnav">Debbie</h1>
+                </li>
+                <li>
+                    <a class="close-link" href="./index.html">X</a>
+                </li>
+            </ul>
+            <div class="super_woman"><img src="./public/images/super_woman.svg" alt="super_woman_img"></div>
         </nav>
-        <div class="img-container">
-            <img id="superwomanimg" src="./public/images/super_woman.svg" alt="super woman image">
-        </div>
-        <h2 id="heading">Let Debbie help monitor your pain</h2>
+    </header>
 
-        <div class="fingerimg">
-            <i style="color: transparent;  
-            text-shadow: 0 0 0 peachpuff;">&#x1F447;</i>
-        </div>
+    <h2 id="heading">Let Debbie help monitor your pain</h2>
+    <div class="fingerimg">
+        <i style="color: transparent;  
+        text-shadow: 0 0 0 peachpuff;">&#x1F447;</i>
+    </div>
+
+    <div class="wrapper">
         <p id="askpainlevel">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
-
         <div class="numberinput">
             <button id="minus">-</button>
             <span id="number">1</span>
             <button id="plus">+</button>
         </div>
         <div class="savebtn">
-
             <button type="button" id="save" style="padding: 0;" class="save-button">Save</button>
+        </div>
+    </div>
 
-        </div>
-        <div class="heart">
-            <img src="./public/images/like.svg" alt="heart icon" id="hearticon">
-        </div>
-        <footer id="footer">Built with <img src="./public/images/like.svg" alt="heart icon" id="hearticonfooter"> by the
-            Coding Cohort
-        </footer>
-    </main>
+    <div class="heart">
+        <img src="./public/images/like.svg" alt="heart icon" id="hearticon">
+    </div>
+    <div class="spacer2">
+        <div class="end-text">Built with <img src="./public/images/like.svg" alt="heart-icon" class="icon-small"> by the
+            coding cohort</div>
+    </div>
+
     <script src="./public/js/input-pain-level.js"></script>
 </body>
 
