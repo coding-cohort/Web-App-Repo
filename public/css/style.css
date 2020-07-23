@@ -43,12 +43,31 @@ button {
   border-radius: 4px;
 }
 
+.logout-link {
+  font-size: 2rem;
+  font-weight: 200;
+
+}
+
+.hand-emoji {
+  padding: 40px 20px 40px 20px;
+  font-size: x-large;
+}
+
+.hero-text {
+    padding: 30px 30px;
+    line-height: 1.6;
+    font-size: 2em;
+    font-weight: 200;
+}
+
 .close-link{
   font-size: 4rem;
   color: #ffffff;
   font-weight: 100;
   opacity: 50%;
 }
+
 
 .close-link a {
   color: #ffffff;
@@ -133,6 +152,48 @@ main {
   padding: 40px 20px 40px 20px;
   line-height: 1.4;
   font-weight: 300;
+}
+
+#myChart {
+  max-width: 750px;
+  max-height: 650px;
+  margin: auto;
+}
+
+#another-spacer{
+  padding-top: 6rem;
+}
+
+label, select {
+  width: 10rem;
+}
+
+
+.update-account{
+  font-size: 1.75rem;
+  font-weight: 200;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
+.update-account a {
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.update-pain-record{
+  font-size: 1.75rem;
+  font-weight: 200;
+   padding-bottom: 20px;
+  padding-top: 20px;
+ 
+}
+
+.update-pain-record a {
+  color: #fff;
+  cursor: pointer;
+
 }
 
 /******************** Info Section  ********************/

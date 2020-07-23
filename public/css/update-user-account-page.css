@@ -240,6 +240,10 @@ input {
 		width: 35px;
 	}
 
+	.close-link {
+		font-size: 1rem;
+	}
+
 	#brand-name-xnav {
 		font-size: 1.5rem;
 		font-weight: 400;
