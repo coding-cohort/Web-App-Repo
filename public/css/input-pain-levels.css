@@ -1,22 +1,7 @@
-.save-button {
-  border: 1px solid#979797;
-  width: 160px;
-  height: auto;
-  color: #fff;
-  font-size: 0.9375em;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
-  background: #2b98ea;
-}
-.savebtn {
-  margin-top: 30px;
-  text-align: center;
-}
 
-.save-button:hover {
-  background-color: blue;
+#savebtn {
+  padding: 3rem;
+  text-align: center;
 }
 
 #askpainlevel {
@@ -81,35 +66,13 @@
     padding: 20px;
   }
 
-  .savebtn {
-    margin-top: 30px;
-  }
-
-  .save-button {
-    padding: 10px 20px !important;
-    margin-top: 30px;
-    font-size: 1.5em;
-  }
-
-  .savebtn {
-    margin-top: 60px;
-  }
+ 
 }
 
-@media (max-width: 460px) {
-  .savebtn {
-    margin-top: 80px;
-  }
-}
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
   html {
     font-size: 130%;
   }
-  .savebtn {
-    margin-top: 90px;
-  }
-  .save-button {
-    padding: 20px 40px !important;
-  }
+
 }

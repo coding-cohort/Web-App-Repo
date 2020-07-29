@@ -1,6 +1,12 @@
+#fingerimg {
+ 
+}
+
+
 #edittext {
   margin-left: 30px;
   font-size: 1.3em;
+  font-weight: 400;
   cursor: pointer;
   background: transparent;
   color: white;

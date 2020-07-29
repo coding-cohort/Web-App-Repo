@@ -104,7 +104,7 @@ main {
   padding-left: 5.5rem;
 }
 
-.brand-name-xnav {
+#brand-name-xnav {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -113,6 +113,7 @@ main {
 
 .super_woman {
   padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 150px;
   margin: 10px auto;
 }
@@ -129,10 +130,18 @@ main {
   letter-spacing: 0.1em;
 }
 
+#heading-signup {
+  padding-bottom: 4rem;
+  font-weight: 400;
+
+}
+
 .fingerimg {
   margin-top: 30px;
   margin-bottom: 40px;
   text-align: center;
+  height: 40px;
+  width: auto;
 }
 
 .header-section__about {
