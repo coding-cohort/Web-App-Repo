@@ -8,7 +8,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;1,300;1,200;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
     <title>Debbie, Your Chronic Pain Monitoring Personal Assistant</title>
 </head>
 
@@ -18,20 +19,36 @@
         <nav>
             <ul class="main-nav__items">
                 <li>
-                    <img class="logo" src="./public/images/Logo.svg" alt="logo">
+                    <img class="logo" src="/images/Logo.svg" alt="logo">
                 </li>
                 <li>
                     <h1 id="brand-name">Debbie</h1>
                 </li>
                 <li>
                     <button class="sign-up__button--header">
-                        <a href="./signup.html"> Sign Up Now!</a>
+                        <% if(!currentUser){ %>
+                        <a href="/register">Sign Up Now!</a>
+                        <% } else { %>
+                        <a href="/signout"> Sign Out</a>
+                        <% } %>
                     </button>
                 </li>
             </ul>
-            <div class="super_woman"><img src="./public/images/super_woman.svg" alt="super_woman_img"></div>
+            <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
         </nav>
     </header>
+
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+        <% } %> <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+        <% } %>
+    </div>
 
     <main>
         <section class="header-section">
@@ -42,9 +59,12 @@
                 </p>
                 <p class="header-section__about">"Hey Google, get help from Debbie"</p>
 
+                <% if(!currentUser){ %>
                 <button class="sign-up__button--header">
-                    <a href="./signup.html"> Sign Up Now!</a>
+
+                    <a href="/register">Sign Up Now!</a>
                 </button>
+                <% } %>
             </article>
             <article>
                 <p class="sub-text">Debbie had a successful career in IT for many years before her chronic arthritis
@@ -58,15 +78,15 @@
         <section id="info">
             <h3 class="info-header">Build your confidence day by day</h3>
             <section class="links__icons">
-                <img src="public/images/success.svg" alt="check mark icon" class="link__icon">
-                <img src="public/images/like.svg" alt="red heart icon" class="link__icon">
-                <img src="public/images/bell.svg" alt="bell icon" class="link__icon">
-                <img src="public/images/exercise.svg" alt="a people exercising" class="link__icon">
+                <img src="/images/success.svg" alt="check mark icon" class="link__icon">
+                <img src="/images/like.svg" alt="red heart icon" class="link__icon">
+                <img src="/images/bell.svg" alt="bell icon" class="link__icon">
+                <img src="/images/exercise.svg" alt="a people exercising" class="link__icon">
             </section>
 
             <section class="about">
                 <div class="about__chat">
-                    <img src="public/images/chat.svg" class="chat-icon" alt="Chat Icon">
+                    <img src="/images/chat.svg" class="chat-icon" alt="Chat Icon">
                     <span>
                         <h3 class="about__header">"Talk to Debbie" with Google Assistant or Alexa</h3>
                         <p>Its as simple as that. You can then plan your goals, record your pain level, work through
@@ -79,20 +99,23 @@
                         <h3 class="about__header">Set voice activated reminders</h3>
                         <p>You can set them each day or each week at a time that suits you.</p>
                     </span>
-                    <img src="public/images/bell.svg" class="bell-icon" alt="Bell Icon">
+                    <img src="/images/bell.svg" class="bell-icon" alt="Bell Icon">
                 </div>
 
             </section>
-
+            <% if(!currentUser){ %>
             <section id="sign-up">
-                <button class="sign-up__button sign-up__button--big"><a href="./signup.html">Sign Up Now!</a></button>
+                <button class="sign-up__button sign-up__button--big">
+                    <a href="/register">Sign Up Now!</a>
+                </button>
             </section>
+            <% } %>
         </section>
 
     </main>
 
     <div class="spacer2">
-        <div class="end-text">Built with <img src="./public/images/like.svg" alt="heart-icon" class="icon-small"> by the
+        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
             coding cohort</div>
     </div>
 </body>

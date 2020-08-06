@@ -63,7 +63,7 @@ input {
   content: '';
   position: absolute;
   right: 45px;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/invalid.png');
@@ -75,7 +75,7 @@ input {
   content: '';
   position: absolute;
   right: 45px;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/valid.png');
@@ -87,7 +87,7 @@ input {
   content: '';
   position: absolute;
   right: 45px;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/mark.png');
@@ -99,7 +99,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/invalid.png');
@@ -111,7 +111,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/valid.png');
@@ -122,7 +122,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/mark.png');
@@ -134,7 +134,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/invalid.png');
@@ -146,7 +146,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/valid.png');
@@ -157,7 +157,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/mark.png');
@@ -169,7 +169,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/invalid.png');
@@ -181,7 +181,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/valid.png');
@@ -192,7 +192,7 @@ input {
   content: '';
   position: absolute;
   right: 13%;
-  margin-top: 50px;
+  margin-top: 70px;
   width: 24px;
   height: 24px;
   background: url('../images/mark.png');
