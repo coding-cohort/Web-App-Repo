@@ -144,6 +144,6 @@ function save() {
     document.getElementById('surname').disabled = true;
     document.getElementById('email').disabled = true;
     document.getElementById('password').disabled = true;
-    window.alert('Updated Successfully');
+    // window.alert('Updated Successfully');
   }
 }

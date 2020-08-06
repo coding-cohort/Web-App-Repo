@@ -71,6 +71,22 @@ button {
   color: #ffffff;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: green;
+}
+
 main {
   padding: 0 6%;
 }
