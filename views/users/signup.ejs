@@ -50,30 +50,33 @@
     <form id="form" action="/register" method="POST">
       <div class="inputBox_name">
         <label for="name">Name</label>
-        <input disabled type="text" id="name" placeholder="Enter Your Name" class="input_name" name="username"
+        <input type="text" id="name" placeholder="Enter Your Name" class="input_name" name="username"
           onchange="validation1()" required />
         <span id="text1"></span>
       </div>
       <div class="inputBox_surname">
         <label for="surname">Surname</label>
-        <input disabled type="text" id="surname" class="input_surname" placeholder="Enter Your Surname" name="surname"
+        <input type="text" id="surname" class="input_surname" placeholder="Enter Your Surname" name="surname"
           onchange="validation2()" required />
         <span id="text2"></span>
       </div>
       <div class="inputBox">
         <label for="email">Email</label>
-        <input disabled type="email" id="email" class="input_email" placeholder="Enter Your Email" name="email"
+        <input type="email" id="email" class="input_email" placeholder="Enter Your Email" name="email"
           onchange="validation()" required />
         <span id="text"></span>
       </div>
       <div class="inputBox_password">
         <label for="password">Password</label>
-        <input disabled type="password" id="password" class="input_password" placeholder="Enter Your Password"
-          name="password" onchange="validation3()" required />
+        <input type="password" id="password" class="input_password" placeholder="Enter Your Password" name="password"
+          onchange="validation3()" required />
         <span id="text3"></span>
       </div>
+      <p class="form-foot"><a href="/login" title="Sign In">Already have an
+          account?</a></p>
       <input type="submit" value="Sign Up Now" class="sign-up__button sign-up__button--big" />
     </form>
+
   </div>
 
   <div class="heart">
@@ -87,9 +90,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/js/usersideValidation.js"></script>
-  <script>
-    edit();
-  </script>
 </body>
 
 </html>

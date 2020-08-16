@@ -225,6 +225,15 @@ input {
   opacity: 50%;
 }
 
+.form-foot {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-foot a {
+  color: rgb(5, 18, 195);
+}
+
 @media screen and (max-width: 768px) {
   .logo {
     height: 50px;
