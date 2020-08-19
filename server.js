@@ -8,7 +8,9 @@ const express = require('express'),
   flash = require('connect-flash'),
   dotenv = require('dotenv'),
   seedDB = require('./seeds'),
-  User = require('./models/User');
+  User = require('./models/User'),
+  cron = require('node-cron'),
+  Pain = require('./models/Pain');
 
 const app = express();
 dotenv.config();
@@ -54,6 +56,7 @@ mongoose
   .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false,
   })
   .then(console.log('successful'))
   .catch((err) => console.log('******** ' + err.message + ' ********'));
@@ -63,7 +66,17 @@ mongoose
 
 // Requiring Routes
 const indexRoutes = require('./routes/index');
+const painRoutes = require('./routes/pain');
 app.use('/', indexRoutes);
+app.use('/', painRoutes);
+
+cron.schedule('59 23 * * *', () => {
+  Pain.findOneAndUpdate({}, { painSubmit: false }, (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+});
 
 app.listen(process.env.PORT, () => {
   console.log('Debbie server has started!');
