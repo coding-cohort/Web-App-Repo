@@ -7,7 +7,6 @@
     <meta name="description"
         content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
     <meta name="theme-color" content="#7b7fec">
-    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="/css/input-pain-levels.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
@@ -25,12 +24,24 @@
                     <h1 id="brand-name-xnav">Debbie</h1>
                 </li>
                 <li>
-                    <a class="close-link" href="./index.html">X</a>
+                    <a class="close-link" href="/">X</a>
                 </li>
             </ul>
             <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
         </nav>
     </header>
+
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+        <% } %> <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+        <% } %>
+    </div>
 
     <h2 id="heading">Let Debbie help monitor your pain</h2>
     <div class="fingerimg">
@@ -40,14 +51,20 @@
 
     <div class="wrapper">
         <p id="askpainlevel">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
-        <div class="numberinput">
-            <button id="minus">-</button>
-            <span id="number">1</span>
-            <button id="plus">+</button>
-        </div>
-        <div class="savebtn">
-            <button type="button" id="save" style="padding: 0;" class="save-button">Save</button>
-        </div>
+        <form action="/pain" method="POST">
+            <div class="numberinput">
+                <div id="minus" title="decrement the pain input" role="button">-</div>
+                <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1"
+                    <% if(painSubmit){ %>disabled<% } %>>
+                <div id="plus" title="increment the pain input" role="button">+</div>
+            </div>
+            <button class="save-button" <% if(painSubmit){ %>disabled<% } %>>Save</button>
+            <% if(painSubmit){ %>
+            <div class="alert alert-danger" role="alert">
+                You have already saved today pain level.
+            </div>
+            <% } %>
+        </form>
     </div>
 
     <div class="heart">

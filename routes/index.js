@@ -1,7 +1,6 @@
 const User = require('../models/User');
 const passport = require('passport');
 const nodemailer = require('nodemailer');
-const async = require('async');
 const crypto = require('crypto');
 
 const express = require('express'),

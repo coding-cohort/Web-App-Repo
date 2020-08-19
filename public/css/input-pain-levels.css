@@ -9,10 +9,7 @@
   font-weight: 600;
   text-align: center;
   background: #2b98ea;
-}
-.savebtn {
   margin-top: 30px;
-  text-align: center;
 }
 
 .save-button:hover {
@@ -47,9 +44,16 @@
   border: none;
   color: #fff;
   font-size: 1.875em;
+  cursor: pointer;
 }
 
 #number {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #9699f3;
+  text-align: center;
   font-size: 2.5em;
   color: #fff;
 }
