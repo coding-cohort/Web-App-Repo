@@ -71,7 +71,7 @@ app.use('/', indexRoutes);
 app.use('/', painRoutes);
 
 cron.schedule('59 23 * * *', () => {
-  Pain.findOneAndUpdate({}, { painSubmit: false }, (err) => {
+  Pain.findOneAndUpdate({ painSubmit: true }, { painSubmit: false }, (err) => {
     if (err) {
       console.log(err);
     }
