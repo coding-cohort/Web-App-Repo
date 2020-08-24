@@ -7,10 +7,8 @@
   <meta name="description"
     content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
   <meta name="theme-color" content="#7b7fec">
-  <link rel="manifest" href="manifest.webmanifest">
-
-  <!--  the below is  the link for the stylesheet -->
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
   <title>Reporting Views</title>
 </head>
 
@@ -18,7 +16,6 @@
   <header class="header-container">
     <nav>
       <ul class="main-nav__items">
-
         <li>
           <img class="logo" src="/images/Logo.svg" alt="logo">
         </li>
@@ -26,55 +23,65 @@
           <h1 id="brand-name">Debbie</h1>
         </li>
         <li>
-          <a class="logout-link" href="./index.html">Logout</a>
+          <a class="logout-link" href="/">Logout</a>
         </li>
       </ul>
       <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
     </nav>
-
   </header>
 
+  <div class="container">
+    <% if(error && error.length > 0){ %>
+    <div class="alert alert-danger" role="alert">
+      <%= error %>
+    </div>
+    <% } %> <% if(success && success.length > 0){ %>
+    <div class="alert alert-success" role="alert">
+      <%= success %>
+    </div>
+    <% } %>
+  </div>
 
   <div class="main-container">
     <div>
       <p class="hero-text">Review your progress - select time period below</p>
-      <div class="hand-emoji"><br> &#128071;
-      </div>
-
+      <div class="hand-emoji"><br> &#128071;</div>
     </div>
-
-  </div>
-
-
   </div>
 
   <div class="chart-container">
     <canvas id="myChart"></canvas>
-
-
-
   </div>
 
-  <div id="another-spacer"></div>
-
-
+  <div id="another-spacer">
+    <div class="form-group">
+      <select class="custom-select" name="timeframe">
+        <option selected>Select timeframe</option>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="monthly">Monthly</option>
+      </select>
+    </div>
+    <div class="button__cont">
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>
+  </div>
 
   <div class="spacer3">
     <div class="update-account"><a href="">Update account >></a></div>
   </div>
+
   <div class="spacer4">
     <div class="update-pain-record"><a href="">Update pain record >></a></div>
   </div>
+
   <div class="spacer2">
     <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
       coding cohort</div>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
   <script src=" https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   <script src="/js/report.js"></script>

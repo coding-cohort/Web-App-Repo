@@ -58,6 +58,16 @@ router.post('/pain', (req, res) => {
     .catch((err) => console.log(err));
 });
 
+// Get the report page
+router.get('/report', (req, res) => {
+  if (!res.locals.currentUser) {
+    req.flash('error', 'Please sign up or sign in first!');
+    return res.redirect('/register');
+  } else {
+    return res.render('pain/report');
+  }
+});
+
 // API routes for getting pain data
 router.get('/api/pain/:userId/:timeframe?', (req, res) => {
   let userId = req.params.userId;
