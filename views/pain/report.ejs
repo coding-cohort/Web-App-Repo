@@ -55,8 +55,7 @@
 
   <div id="another-spacer">
     <div class="form-group">
-      <select class="custom-select" name="timeframe">
-        <option selected>Select timeframe</option>
+      <select class="custom-select" name="timeframe" id="<% if (currentUser) { %><%= currentUser._id %><% } %>">
         <option value="daily">Daily</option>
         <option value="weekly">Weekly</option>
         <option value="monthly">Monthly</option>

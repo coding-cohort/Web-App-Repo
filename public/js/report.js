@@ -35,17 +35,17 @@ const DAYS = [
     'rgba(2, 206, 86, 0.8)',
     'rgba(75, 152, 100, 0.8)',
     'rgba(103, 92, 255, 0.4)',
-  ];
-
-const select = document.querySelector('.custom-select'),
+  ],
+  select = document.querySelector('.custom-select'),
+  id = select.id,
   prev = document.querySelector('.prev'),
   next = document.querySelector('.next');
 
 let data,
   labels,
-  color,
   timeframe = 'daily',
-  index = 0;
+  index = 0,
+  myChart;
 
 select.addEventListener('change', (e) => {
   timeframe = e.target.value;
@@ -54,23 +54,24 @@ select.addEventListener('change', (e) => {
     timeframe === 'weekly' ||
     timeframe === 'monthly'
   ) {
-    setFetchData();
+    fetchData();
   } else {
     return undefined;
   }
 });
 
 prev.addEventListener('click', () => {
-  index === 0 ? index : --index;
-  renderBarchart();
-});
-next.addEventListener('click', () => {
-  index === data.length - 1 ? index : ++index;
+  index === 0 ? (index = data.length - 1) : --index;
   renderBarchart();
 });
 
-const setFetchData = () => {
-  fetch(`http://localhost:3000/api/pain/5f361412ff733839089f63c6/${timeframe}`)
+next.addEventListener('click', () => {
+  index === data.length - 1 ? (index = 0) : ++index;
+  renderBarchart();
+});
+
+const fetchData = () => {
+  fetch(`http://localhost:3000/api/pain/${id}/${timeframe}`)
     .then((response) => response.json())
     .then((result) => {
       data = result[timeframe];
@@ -79,13 +80,10 @@ const setFetchData = () => {
         labels = DAYS;
       } else if (timeframe === 'weekly') {
         let month = MONTHS[new Date().getMonth()];
-        labels = WEEKS.filter((week, i) => {
-          if (i < data[index].length) return `${month} ${week}`;
-        });
+        labels = WEEKS.map((week) => `${month} ${week}`);
       } else {
         labels = MONTHS;
       }
-      color = COLORS;
       renderBarchart();
     })
     .catch((err) => {
@@ -94,20 +92,18 @@ const setFetchData = () => {
 };
 
 const renderBarchart = () => {
-  console.log(data[index]);
+  if (myChart) myChart.destroy();
   const ctx = document.getElementById('myChart').getContext('2d');
-  const myChart = new Chart(ctx, {
+  myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: labels.filter((label, i) => {
-        if (i <= data[index].length - 1) return label;
-      }),
+      labels: iterateArray(labels),
       datasets: [
         {
           label: 'Report Data',
           data: data[index],
-          backgroundColor: color,
-          borderColor: color,
+          backgroundColor: iterateArray(COLORS),
+          borderColor: iterateArray(COLORS),
           borderWidth: 1,
         },
       ],
@@ -126,4 +122,9 @@ const renderBarchart = () => {
   });
 };
 
-setFetchData();
+const iterateArray = (array) =>
+  array.filter((ele, i) => {
+    if (i < data[index].length) return ele;
+  });
+
+fetchData();
