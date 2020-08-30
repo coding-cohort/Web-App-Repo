@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/input-pain-levels.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
-    <title>Input Pain Levels Page</title>
+    <title>Report Pain Levels</title>
 </head>
 
 <body>
@@ -54,14 +54,14 @@
         <form action="/pain" method="POST">
             <div class="numberinput">
                 <div id="minus" title="decrement the pain input" role="button">-</div>
-                <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1"
-                    <% if(painSubmit){ %>disabled<% } %>>
+                <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1">
                 <div id="plus" title="increment the pain input" role="button">+</div>
             </div>
-            <button class="save-button" <% if(painSubmit){ %>disabled<% } %>>Save</button>
+            <button class="save-button">Save</button>
             <% if(painSubmit){ %>
             <div class="alert alert-danger" role="alert">
-                You have already saved today pain level.
+                You have already saved today pain level. If you try to submit your pain level again, the action will
+                replace today's previous data.
             </div>
             <% } %>
         </form>
