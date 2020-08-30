@@ -14,7 +14,7 @@ router.get('/pain', (req, res) => {
       req.flash('error', 'Something went wrong.');
       return res.redirect('back');
     }
-    res.render('pain/input', { painSubmit: data.painSubmit });
+    res.render('pain/input', { painSubmit: data ? data.painSubmit : false });
   });
 });
 
@@ -74,7 +74,7 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
   let timeframe = req.params.timeframe;
   Pain.findOne({ userId }, (err, data) => {
     if (err) {
-      return res.json({ error: err.message });
+      return res.json({ error: `No user found!` });
     } else {
       if (timeframe) {
         if (
@@ -87,7 +87,7 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
           return res.json(obj);
         } else {
           return res.json({
-            error: `${timeframe} is not a valid timeframe. You can use daily, weekly and montly instead.`,
+            error: `${timeframe} is not a valid timeframe. You can only use daily, weekly and montly instead.`,
           });
         }
       } else {
@@ -100,21 +100,34 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
 const painLevels = (painNum, pain, timeframe, length) => {
   let time = pain[timeframe];
   if (time.length === 0) {
-    pain[timeframe].push([painNum]);
+    pain.painSubmit
+      ? (time[time.length - 1] = [painNum])
+      : time.push([painNum]);
+    pain[timeframe] = [...time];
     return pain;
   } else {
     let index = time.length - 1;
     if (time[index].length < length) {
-      time[index].push(painNum);
+      pain.painSubmit
+        ? (time[index][time[index].length - 1] = painNum)
+        : time[index].push(painNum);
       pain[timeframe] = [...time];
       return pain;
     } else if (time[index].length === length) {
       let painTotal = time[index].reduce((tot, e) => tot + e);
-      pain[timeframe].push([painNum]);
+      pain.painSubmit
+        ? (time[index][time[index].length - 1] = painNum)
+        : time.push([painNum]);
+      pain[timeframe] = [...time];
       return timeframe === 'daily'
-        ? painLevels(parseInt(painTotal / length), pain, 'weekly', 4)
+        ? painLevels(parseInt(Math.ceil(painTotal / length)), pain, 'weekly', 4)
         : timeframe === 'weekly'
-        ? painLevels(parseInt(painTotal / length), pain, 'monthly', 12)
+        ? painLevels(
+            parseInt(Math.ceil(painTotal / length)),
+            pain,
+            'monthly',
+            12
+          )
         : pain;
     }
   }

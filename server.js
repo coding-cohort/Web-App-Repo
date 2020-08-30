@@ -7,7 +7,6 @@ const express = require('express'),
   methodOverride = require('method-override'),
   flash = require('connect-flash'),
   dotenv = require('dotenv'),
-  seedDB = require('./seeds'),
   User = require('./models/User'),
   cron = require('node-cron'),
   Pain = require('./models/Pain');
@@ -60,9 +59,6 @@ mongoose
   })
   .then(console.log('successful'))
   .catch((err) => console.log('******** ' + err.message + ' ********'));
-
-// Seed the DB
-// seedDB();
 
 // Requiring Routes
 const indexRoutes = require('./routes/index');
