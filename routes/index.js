@@ -1,7 +1,6 @@
 const User = require('../models/User');
 const passport = require('passport');
 const nodemailer = require('nodemailer');
-const async = require('async');
 const crypto = require('crypto');
 
 const express = require('express'),
@@ -36,6 +35,60 @@ router.post('/register', (req, res) => {
       res.redirect('/');
     });
   });
+});
+
+// Show the update account page
+router.get('/update', (req, res) => {
+  if (!res.locals.currentUser) {
+    req.flash('error', 'Please sign into your account before updating it.');
+    res.redirect('/login');
+  } else {
+    res.render('users/update', { user: res.locals.currentUser });
+  }
+});
+
+// Save user updated data in the data base and authentiate user
+router.put('/update', (req, res) => {
+  User.find()
+    .where('email')
+    .equals(req.body.email)
+    .exec((err, foundUser) => {
+      if (foundUser._id && foundUser._id !== res.locals.currentUser._id) {
+        req.flash('error', 'User name already taken!');
+        return res.redirect('back');
+      } else if (err) {
+        req.flash('error', 'Something went wrong.');
+      } else {
+        User.findById({ _id: res.locals.currentUser._id }, (err, user) => {
+          if (err) {
+            req.flash('error', err.message);
+            res.redirect('back');
+          } else {
+            user.username = req.body.username;
+            user.surname = req.body.surname;
+            user.email = req.body.email;
+            user.password = req.body.password;
+            user.save((err) => {
+              if (err) {
+                req.flash('error', err.message);
+                res.redirect('back');
+              } else {
+                req.flash(
+                  'success',
+                  'Successfully updated your account details.'
+                );
+                req.logIn(user, (err) => {
+                  if (err) {
+                    req.flash('error', err.message);
+                    return res.redirect('back');
+                  } else return res.redirect('/report');
+                });
+              }
+            });
+          }
+        });
+      }
+    });
 });
 
 // Sign in get route

@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+.save-button {
+  border: 1px solid#979797;
+  width: 160px;
+  height: auto;
+  color: #fff;
+  font-size: 0.9375em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  background: #2b98ea;
+  margin-top: 30px;
+}
+>>>>>>> 4ec23d7f632499ce33639f4d790d061513fefce7
 
 #savebtn {
   padding: 3rem;
@@ -32,9 +48,16 @@
   border: none;
   color: #fff;
   font-size: 1.875em;
+  cursor: pointer;
 }
 
 #number {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #9699f3;
+  text-align: center;
   font-size: 2.5em;
   color: #fff;
 }
