@@ -183,9 +183,25 @@ main {
   padding-top: 6rem;
 }
 
-label,
 select {
-  width: 10rem;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0e15f3;
+}
+
+.button__cont {
+  width: 50%;
+  margin: -50px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__cont button {
+  width: 50px;
 }
 
 .update-account {
@@ -406,4 +422,9 @@ select {
     grid-area: occupy2;
     text-align: left;
   }
+}
+
+img[src*='#thumbnail'] {
+  width: 150px;
+  height: 100px;
 }

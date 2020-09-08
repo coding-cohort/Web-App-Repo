@@ -38,7 +38,6 @@ function validation1() {
   var form = document.getElementById('form');
   var name = document.getElementById('name').value;
   console.log(form, name);
-  let flag = false;
   var text1 = document.getElementById('text1');
 
   if (name.length < 4) {
@@ -123,27 +122,32 @@ function validation3() {
   }
 }
 
-function edit() {
-  document.getElementById('name').disabled = false;
-  document.getElementById('surname').disabled = false;
-  document.getElementById('email').disabled = false;
-  document.getElementById('password').disabled = false;
-  $('#name').focus();
-}
+//validtion for password
+function validation4() {
+  var form = document.getElementById('form');
+  var password = document.getElementById('password').value;
+  var conpassword = document.getElementById('conpassword').value;
+  var text4 = document.getElementById('text4');
 
-function save() {
-  let arr = [...form.classList];
-  console.log(arr);
-  if (
-    arr.includes('valid') &&
-    arr.includes('valid1') &&
-    arr.includes('valid2') &&
-    arr.includes('valid3')
-  ) {
-    document.getElementById('name').disabled = true;
-    document.getElementById('surname').disabled = true;
-    document.getElementById('email').disabled = true;
-    document.getElementById('password').disabled = true;
-    // window.alert('Updated Successfully');
+  if (conpassword !== password) {
+    form.classList.remove('valid3');
+    form.classList.add('invalid3');
+    form.classList.remove('mark3');
+    text4.innerHTML = 'Confirm password must be same as password.';
+    text4.style.color = '#ff0000';
+  } else {
+    form.classList.remove('invalid3');
+    form.classList.add('valid3');
+    form.classList.remove('mark3');
+    text4.innerHTML = 'Your Password is Valid';
+    text4.style.color = '#00ff00';
+    flag4 = true;
+  }
+  if (conpassword == '') {
+    form.classList.remove('invalid3');
+    form.classList.remove('valid3');
+    form.classList.add('mark3');
+    text4.innerHTML = 'This Field cannot be Empty';
+    text4.style.color = 'yellow';
   }
 }

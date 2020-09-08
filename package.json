@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/VijayKumarKTG/Web-App-Repo#readme",
   "dependencies": {
-    "async": "^3.2.0",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^8.2.0",
@@ -34,6 +33,7 @@
     "method-override": "^3.0.0",
     "moment": "^2.27.0",
     "mongoose": "^5.9.27",
+    "node-cron": "^2.0.3",
     "nodemailer": "^6.4.11",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
