@@ -52,6 +52,19 @@ npm install
 
 ---
 
+- ### How to run?
+
+```npm
+npm start
+```
+
+```heroku
+heroku login
+git push heroku master
+```
+
+---
+
 - ### User Routes
 
 1. '/ ' => Home page
