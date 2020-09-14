@@ -52,6 +52,19 @@ npm install
 
 ---
 
+- ### How to run?
+
+```npm
+npm start
+```
+
+```heroku
+heroku login
+git push heroku master
+```
+
+---
+
 - ### User Routes
 
 1. '/ ' => Home page
@@ -104,3 +117,10 @@ npm install
 
 ---
 
+- ### Issues
+
+[#1](https://github.com/coding-cohort/Web-App-Repo/issues/1)
+
+[#22](https://github.com/coding-cohort/Web-App-Repo/issues/22)
+
+[#23](https://github.com/coding-cohort/Web-App-Repo/issues/23)
