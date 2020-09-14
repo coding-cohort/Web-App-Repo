@@ -1,12 +1,14 @@
+import { baseUrl } from "./baseUrl";
+
 const DAYS = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday',
-  ],
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+],
   WEEKS = ['W1', 'W2', 'W3', 'W4'],
   MONTHS = [
     'Jan',
@@ -71,7 +73,7 @@ next.addEventListener('click', () => {
 });
 
 const fetchData = () => {
-  fetch(`http://localhost:3000/api/pain/${id}/${timeframe}`)
+  fetch(baseUrl + `api/pain/${id}/${timeframe}`)
     .then((response) => response.json())
     .then((result) => {
       data = result[timeframe];
