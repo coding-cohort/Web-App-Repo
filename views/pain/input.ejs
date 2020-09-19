@@ -45,8 +45,7 @@
 
     <h2 id="heading">Let Debbie help monitor your pain</h2>
     <div class="fingerimg">
-        <i style="color: transparent;  
-        text-shadow: 0 0 0 peachpuff;">&#x1F447;</i>
+        &#128071;
     </div>
 
     <div class="wrapper">
@@ -57,10 +56,11 @@
                 <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1">
                 <div id="plus" title="increment the pain input" role="button">+</div>
             </div>
+            <div class="space"></div>
             <button class="save-button">Save</button>
             <% if(painSubmit){ %>
             <div class="alert alert-danger" role="alert">
-                You have already saved today pain level. If you try to submit your pain level again, the action will
+                If you try to submit your pain level again, the action will
                 replace today's previous data.
             </div>
             <% } %>

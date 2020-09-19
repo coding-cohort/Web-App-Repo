@@ -1,5 +1,14 @@
 <<<<<<< HEAD
 =======
+
+.fingerimg {
+  font-size: 50px;
+}
+
+.space {
+  height: 40px;
+}
+
 .save-button {
   border: 1px solid#979797;
   width: 160px;
