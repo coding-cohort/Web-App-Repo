@@ -30,6 +30,7 @@ p {
 }
 
 button {
+  border-style: none;
   width: 160px;
   background: #5157AC;
   height: auto;
