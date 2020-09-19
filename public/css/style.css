@@ -30,7 +30,7 @@ p {
 }
 
 button {
-  border: 1px solid#979797;
+  border: 1px solid#A0A5E9;
   width: 160px;
   height: auto;
   color: #fff;
@@ -38,7 +38,7 @@ button {
   cursor: pointer;
   font-weight: 600;
   text-align: center;
-  background: #2b98ea;
+  background: #A0A5E9;
   padding: 10px;
   border-radius: 4px;
 }
