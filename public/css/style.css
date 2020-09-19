@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
 }
 
 body {
   text-align: center;
   min-height: 100vh;
-  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
-  background-image: -webkit-linear-gradient(
-    top,
-    rgba(255, 255, 255, 1) -100%,
-    rgba(123, 127, 236, 1) 100%
-  );
+  background-color: #77cdd2;
   color: #fff;
 }
 
@@ -74,7 +69,6 @@ button {
 .container {
   width: 70%;
   margin: auto;
-  border: 2px solid #fff;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -149,7 +143,6 @@ main {
 #heading-signup {
   padding-bottom: 4rem;
   font-weight: 400;
-
 }
 
 .fingerimg {
@@ -406,8 +399,8 @@ select {
     grid-template-rows: auto auto;
     grid-row-gap: 5rem;
     grid-template-areas:
-      '. occupy1'
-      'occupy2 .';
+      ". occupy1"
+      "occupy2 .";
   }
 
   .about img {
@@ -433,7 +426,7 @@ select {
   }
 }
 
-img[src*='#thumbnail'] {
+img[src*="#thumbnail"] {
   width: 150px;
   height: 100px;
 }
