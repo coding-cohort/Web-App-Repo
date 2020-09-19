@@ -30,8 +30,7 @@ p {
 }
 
 button {
-  border: 1px solid#5157AC;
-  background: -webkit-linear-gradient(
+  background-color: -webkit-linear-gradient(
     top,
     rgba(167, 174, 241, 1) -100%,
     rgba(183, 190, 253, 1) 100%
