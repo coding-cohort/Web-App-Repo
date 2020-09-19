@@ -31,6 +31,11 @@ p {
 
 button {
   border: 1px solid#5157AC;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(167, 174, 241, 1) -100%,
+    rgba(183, 190, 253, 1) 100%
+  );
   width: 160px;
   height: auto;
   color: #fff;
@@ -38,7 +43,6 @@ button {
   cursor: pointer;
   font-weight: 600;
   text-align: center;
-  background: #5157AC;
   padding: 10px;
   border-radius: 4px;
 }
