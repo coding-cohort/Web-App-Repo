@@ -14,7 +14,7 @@ body {
   /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
   background-image: -webkit-linear-gradient(
     top,
-    rgba(119, 205, 209, 1) 100%,
+    rgba(119, 205, 209, 1) -100%,
     rgba(100, 156, 248, 1) 100%
   );
   color: #fff;
