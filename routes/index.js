@@ -11,6 +11,18 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
+router.get('/', (req, res) => {
+  res.render('report');
+});
+
+router.get('/', (req, res) => {
+  res.render('pain');
+});
+
+router.get('/', (req, res) => {
+  res.render('update');
+});
+
 // Show the sign up ( register ) page
 router.get('/register', (req, res) => {
   res.render('users/signup');
