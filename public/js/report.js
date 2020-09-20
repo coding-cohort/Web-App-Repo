@@ -71,24 +71,33 @@ next.addEventListener('click', () => {
 });
 
 const fetchData = () => {
+  console.log(id, timeframe);
   fetch(`http://localhost:3000/api/pain/${id}/${timeframe}`)
     .then((response) => response.json())
     .then((result) => {
-      data = result[timeframe];
-      index = result[timeframe].length - 1;
-      if (timeframe === 'daily') {
-        labels = DAYS;
-      } else if (timeframe === 'weekly') {
-        let month = MONTHS[new Date().getMonth()];
-        labels = WEEKS.map((week) => `${month} ${week}`);
+      if (result.success === 'No data!') {
+        showText(result.success);
       } else {
-        labels = MONTHS;
+        data = result[timeframe];
+        index = result[timeframe].length - 1;
+        if (timeframe === 'daily') {
+          labels = DAYS;
+        } else if (timeframe === 'weekly') {
+          let month = MONTHS[new Date().getMonth()];
+          labels = WEEKS.map((week) => `${month} ${week}`);
+        } else {
+          labels = MONTHS;
+        }
+        renderBarchart();
       }
-      renderBarchart();
     })
     .catch((err) => {
       console.log(err);
     });
+};
+
+const showText = (text) => {
+  const noText = document.querySelector('.no-text').innerHTML(text);
 };
 
 const renderBarchart = () => {

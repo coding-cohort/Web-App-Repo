@@ -11,16 +11,19 @@ router.get('/', (req, res) => {
   res.render('index');
 });
 
-router.get('/', (req, res) => {
-  res.render('report');
-});
-
+// Render the pain page
 router.get('/', (req, res) => {
   res.render('pain');
 });
 
+// Render the report page
 router.get('/', (req, res) => {
-  res.render('update');
+  res.render('report');
+});
+
+// Update/Edit account page
+router.get('/', (req, res) => {
+  res.render('account');
 });
 
 // Show the sign up ( register ) page
@@ -44,7 +47,7 @@ router.post('/register', (req, res) => {
     }
     passport.authenticate('local')(req, res, () => {
       req.flash('success', 'Welcome to Debbie, ' + user.username);
-      res.redirect('/');
+      res.redirect('/report');
     });
   });
 });
@@ -114,7 +117,7 @@ router.post(
   passport.authenticate('local', {
     successFlash: `Welcome Back!`,
     failureFlash: true,
-    successRedirect: '/',
+    successRedirect: '/report',
     failureRedirect: '/login',
   }),
   (req, res) => {}

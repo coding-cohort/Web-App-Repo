@@ -64,7 +64,7 @@ router.get('/report', (req, res) => {
     req.flash('error', 'Please sign up or sign in first!');
     return res.redirect('/register');
   } else {
-    return res.render('pain/report');
+    return res.render('report');
   }
 });
 
@@ -75,6 +75,8 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
   Pain.findOne({ userId }, (err, data) => {
     if (err) {
       return res.json({ error: `No user found!` });
+    } else if (data === null) {
+      return res.json({ success: 'No data!' });
     } else {
       if (timeframe) {
         if (
@@ -83,6 +85,7 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
           timeframe === 'monthly'
         ) {
           let obj = {};
+          console.log(data);
           obj[timeframe] = data[timeframe];
           return res.json(obj);
         } else {

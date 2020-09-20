@@ -49,7 +49,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Databese connection
+
 const uri = process.env.DATABASEURL || 'mongodb://localhost/debbie';
 mongoose
   .connect(uri, {

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Sign up with us and we will try our best to monitor your pain level.">
+  <meta name="description" content="Update your account to monitor your pain level.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/update-user-account-page.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;1,300;1,200;1,400&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
-  <title>Sign Up to get started with us!</title>
+  <title>Update Your Account</title>
 </head>
 
 <body>
@@ -25,13 +25,23 @@
           <h1 id="brand-name-xnav">Debbie</h1>
         </li>
         <li>
+<<<<<<< HEAD
+          <a class="close-link" href="./report.html">X</a>
+=======
           <a class="close-link" href="/">X</a>
+>>>>>>> 4ec23d7f632499ce33639f4d790d061513fefce7
         </li>
       </ul>
       <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
     </nav>
   </header>
 
+<<<<<<< HEAD
+  <h2 id="heading-signup">Update your account details below</h2>
+  <div class="fingerimg">
+    &#128073;
+    <button id="edittext" onclick="edit()">Edit >></button>
+=======
   <div class="container">
     <% if(error && error.length > 0){ %>
     <div class="alert alert-danger" role="alert">
@@ -42,39 +52,38 @@
       <%= success %>
     </div>
     <% } %>
+>>>>>>> 4ec23d7f632499ce33639f4d790d061513fefce7
   </div>
 
-  <h2 id="heading-signup">To get help from Debbie sign up now!</h2>
+  <h2 id="heading-signup">Update your account details below.</h2>
 
   <div class="wrapper">
-    <form id="form" action="/register" method="POST">
+    <form id="form" action="/update?_method=put" method="POST">
       <div class="inputBox_name">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Enter Your Name" class="input_name" name="username"
-          onchange="validation1()" required />
+          onchange="validation1()" value="<%= user.username %>" />
         <span id="text1"></span>
       </div>
       <div class="inputBox_surname">
         <label for="surname">Surname</label>
         <input type="text" id="surname" class="input_surname" placeholder="Enter Your Surname" name="surname"
-          onchange="validation2()" required />
+          onchange="validation2()" value="<%= user.surname %>" />
         <span id="text2"></span>
       </div>
       <div class="inputBox">
         <label for="email">Email</label>
         <input type="email" id="email" class="input_email" placeholder="Enter Your Email" name="email"
-          onchange="validation()" required />
+          onchange="validation()" value="<%= user.email %>" />
         <span id="text"></span>
       </div>
       <div class="inputBox_password">
         <label for="password">Password</label>
         <input type="password" id="password" class="input_password" placeholder="Enter Your Password" name="password"
-          onchange="validation3()" required />
+          onchange="validation3()" value="<%= user.password %>" />
         <span id="text3"></span>
       </div>
-      <p class="form-foot"><a href="/login" title="Sign In">Already have an
-          account?</a></p>
-      <input type="submit" value="Sign Up Now" class="sign-up__button sign-up__button--big" />
+      <input type="submit" value="Update" class="sign-up__button sign-up__button--big" />
     </form>
 
   </div>

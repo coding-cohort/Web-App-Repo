@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 
 .fingerimg {
   font-size: 40px;
 }
+=======
+<<<<<<< HEAD
+=======
+
+.fingerimg {
+  font-size: 50px;
+}
+
+.space {
+  height: 40px;
+}
+
+>>>>>>> 1842ebf322303a43477af5e299045d20d261c54d
 .save-button {
   border: 1px solid#979797;
   width: 160px;

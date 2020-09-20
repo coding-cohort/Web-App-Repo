@@ -1,16 +1,15 @@
 
 Style guide for pain monitoring app
 
-linear-gradient - bottom to top #B2B6F7 100% opacity
+linear-gradient -  top #77CDD1 bottom #659FF6 100% opacity
 
 
-All icons with 50 - 65% opacity - just check whether they look even or not. If one stands out more than the others it needs to be adjusted.
+All icons with 50 - 65% opacity - just check whether they look even or not and adjust accordingly. If one stands out more than the others it needs to be adjusted - just see what makes sense on the screens when you test it.
 
 All text white #ffffff
 Font used for everything is: Lato - download this from google api fonts.
 
-Button color - #2B98EA
-
+Button color  linear gradient - #B7BEFD top  #5059DA bottom
 
 Hand emoji can be inserted from emoji text
 
@@ -27,13 +26,5 @@ Don't optimise for all just say x3 key ones for iPad and x2 for iPhone for examp
 
 
 
-35.186.192.234
-
-
-gcloud compute backend-services add-backend nginx-backend \
-    --instance-group nginx-group \
-    --instance-group-zone us-east1-b \
-    --global
-
-35.229.94.119
+comm
 

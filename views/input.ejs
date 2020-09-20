@@ -24,7 +24,7 @@
                     <h1 id="brand-name-xnav">Debbie</h1>
                 </li>
                 <li>
-                    <a class="close-link" href="/">X</a>
+                    <a class="close-link" href="/report">X</a>
                 </li>
             </ul>
             <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
@@ -56,10 +56,11 @@
                 <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1">
                 <div id="plus" title="increment the pain input" role="button">+</div>
             </div>
+            <div class="space"></div>
             <button class="save-button">Save</button>
             <% if(painSubmit){ %>
             <div class="alert alert-danger" role="alert">
-                You have already saved today pain level. If you try to submit your pain level again, the action will
+                If you try to submit your pain level again, the action will
                 replace today's previous data.
             </div>
             <% } %>
