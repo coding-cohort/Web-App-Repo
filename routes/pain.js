@@ -64,7 +64,7 @@ router.get('/report', (req, res) => {
     req.flash('error', 'Please sign up or sign in first!');
     return res.redirect('/register');
   } else {
-    return res.render('pain/report');
+    return res.render('report');
   }
 });
 

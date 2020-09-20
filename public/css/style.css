@@ -14,8 +14,8 @@ body {
   /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
   background-image: -webkit-linear-gradient(
     top,
-    rgba(255, 255, 255, 1) -100%,
-    rgba(123, 127, 236, 1) 100%
+    rgb(255, 255, 255) -100%,
+    rgb(0, 3, 83) 100%
   );
   color: #fff;
 }
@@ -149,7 +149,6 @@ main {
 #heading-signup {
   padding-bottom: 4rem;
   font-weight: 400;
-
 }
 
 .fingerimg {
