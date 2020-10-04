@@ -14,7 +14,7 @@ router.get('/pain', (req, res) => {
       req.flash('error', 'Something went wrong.');
       return res.redirect('back');
     }
-    res.render('pain/input', { painSubmit: data ? data.painSubmit : false });
+    res.render('input', { painSubmit: data ? data.painSubmit : false });
   });
 });
 
@@ -85,7 +85,6 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
           timeframe === 'monthly'
         ) {
           let obj = {};
-          console.log(data);
           obj[timeframe] = data[timeframe];
           return res.json(obj);
         } else {

@@ -97,7 +97,7 @@ const fetchData = () => {
 };
 
 const showText = (text) => {
-  const noText = document.querySelector('.no-text').innerHTML(text);
+  document.querySelector('.no-text').innerHTML = text;
 };
 
 const renderBarchart = () => {
