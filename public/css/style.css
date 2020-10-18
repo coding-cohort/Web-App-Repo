@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
 }
 
@@ -16,7 +16,6 @@ body {
     top,
     rgba(119, 205, 209, 1) -100%,
     rgba(100, 156, 248, 1) 100%
-  
   );
   color: #fff;
 }
@@ -33,7 +32,7 @@ p {
 button {
   border-style: none;
   width: 160px;
-  background: #5157AC;
+  background: #5157ac;
   height: auto;
   color: #fff;
   font-size: 0.9375em;
@@ -43,7 +42,6 @@ button {
   padding: 10px;
   border-radius: 4px;
 }
-
 
 .logout-link {
   font-size: 2rem;
@@ -66,7 +64,7 @@ button {
   font-size: 4rem;
   color: #ffffff;
   font-weight: 100;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .close-link a {
@@ -253,7 +251,7 @@ select {
   display: flex;
   justify-content: space-between;
   padding: 6rem 0;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .link__icon {
@@ -285,11 +283,11 @@ select {
 }
 
 .chat-icon {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .bell-icon {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 #sign-up {
@@ -311,7 +309,7 @@ select {
   text-align: center;
   height: 20px;
   width: 20px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .spacer2 {
@@ -333,7 +331,7 @@ select {
 
 .end-text {
   font-size: 10px;
-  opacity: 60%;
+  opacity: 0.6;
   padding-bottom: 50px;
 }
 
@@ -406,8 +404,8 @@ select {
     grid-template-rows: auto auto;
     grid-row-gap: 5rem;
     grid-template-areas:
-      ". occupy1"
-      "occupy2 .";
+      '. occupy1'
+      'occupy2 .';
   }
 
   .about img {
@@ -433,7 +431,7 @@ select {
   }
 }
 
-img[src*="#thumbnail"] {
+img[src*='#thumbnail'] {
   width: 150px;
   height: 100px;
 }
