@@ -1,7 +1,5 @@
 #fingerimg {
- 
 }
-
 
 #edittext {
   margin-left: 30px;
@@ -222,7 +220,7 @@ input {
   text-align: center;
   height: 20px;
   width: 20px;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .form-foot {

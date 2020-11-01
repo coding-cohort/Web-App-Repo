@@ -1,3 +1,7 @@
+.fingerimg {
+  font-size: 40px;
+}
+
 .save-button {
   border: 1px solid#979797;
   width: 160px;
@@ -8,7 +12,7 @@
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
-  background: #2b98ea;
+  background: #5157AC;
   margin-top: 30px;
 }
 

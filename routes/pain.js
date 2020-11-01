@@ -14,7 +14,7 @@ router.get('/pain', (req, res) => {
       req.flash('error', 'Something went wrong.');
       return res.redirect('back');
     }
-    res.render('pain/input', { painSubmit: data ? data.painSubmit : false });
+    res.render('input', { painSubmit: data ? data.painSubmit : false });
   });
 });
 
@@ -64,7 +64,7 @@ router.get('/report', (req, res) => {
     req.flash('error', 'Please sign up or sign in first!');
     return res.redirect('/register');
   } else {
-    return res.render('pain/report');
+    return res.render('report');
   }
 });
 
@@ -75,6 +75,8 @@ router.get('/api/pain/:userId/:timeframe?', (req, res) => {
   Pain.findOne({ userId }, (err, data) => {
     if (err) {
       return res.json({ error: `No user found!` });
+    } else if (data === null) {
+      return res.json({ success: 'No data!' });
     } else {
       if (timeframe) {
         if (
