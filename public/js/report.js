@@ -23,7 +23,7 @@ const DAYS = [
     'Dec',
   ],
   COLORS = [
-    'rgba(255, 99, 132, 0.8)',
+    'rgba(255, 0, 0,0.8)',
     'rgba(54, 162, 235, 0.8)',
     'rgba(255, 206, 86, 0.8)',
     'rgba(75, 192, 192, 0.8)',
@@ -36,7 +36,7 @@ const DAYS = [
     'rgba(75, 152, 100, 0.8)',
     'rgba(103, 92, 255, 0.4)',
   ],
-  select = document.querySelector('.custom-select'),
+  select = document.querySelector('.time__select'),
   id = select.id,
   prev = document.querySelector('.prev'),
   next = document.querySelector('.next');
@@ -71,8 +71,7 @@ next.addEventListener('click', () => {
 });
 
 const fetchData = () => {
-  console.log(id, timeframe);
-  fetch(`http://localhost:3000/api/pain/${id}/${timeframe}`)
+  fetch(`${window.location.origin}/api/pain/${id}/${timeframe}`)
     .then((response) => response.json())
     .then((result) => {
       if (result.success === 'No data!') {
@@ -123,6 +122,12 @@ const renderBarchart = () => {
           {
             ticks: {
               beginAtZero: true,
+              padding: 10,
+            },
+            gridLines: {
+              borderDash: [7, 7, 7],
+              lineWidth: 2,
+              drawTicks: false,
             },
           },
         ],
