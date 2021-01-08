@@ -9,77 +9,69 @@
   <meta name="theme-color" content="#7b7fec">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
-  <title>Reporting Views</title>
+  <title>Debbie: Reporting Views</title>
 </head>
 
 <body>
-  <header class="header-container">
-    <nav>
-      <ul class="main-nav__items">
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="nav__container">
         <li>
-          <img class="logo" src="/images/Logo.svg" alt="logo">
+          <a href="/"><img class="logo" src="/images/Logo.svg" alt="logo"></a>
         </li>
         <li>
-          <h1 id="brand-name">Debbie</h1>
+          <h1 class="brand-name"><a href="/">Debbie</a></h1>
         </li>
-        <li>
-          <a class="logout-link" href="/">Logout</a>
+        <li class="last__list__item">
+          <h1 class="brand-name"><a href="/">X</a></h1>
         </li>
       </ul>
-      <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
+      <div class="super_woman"><img src="/images/super_woman.svg" alt="super woman"></div>
     </nav>
   </header>
 
-  <div class="container">
-    <% if(error && error.length > 0){ %>
-    <div class="alert alert-danger" role="alert">
-      <%= error %>
-    </div>
-    <% } %> <% if(success && success.length > 0){ %>
-    <div class="alert alert-success" role="alert">
-      <%= success %>
-    </div>
-    <% } %>
-  </div>
+  <main>
+    <section class="header__section">
+      <article class="header__section__first__part">
+        <p style="font-weight: normal;">Review your progress -<br /> select time period below</p>
+        <p><br> &#128071;</p>
+      </article>
+    </section>
 
-  <div class="main-container">
-    <div>
-      <p class="hero-text">Review your progress - select time period below</p>
-      <div class="hand-emoji"><br> &#128071;</div>
-    </div>
-  </div>
+    <section class="chart__container">
+      <h2 class="chart__header">Average Pain Level</h2>
+      <canvas id="myChart"></canvas>
+    </section>
 
-  <div class="chart-container">
-    <canvas id="myChart"></canvas>
-  </div>
+    <section class="no-text"></section>
 
-  <div class="no-text"></div>
+    <section id="main__footer">
+      <div class="chart__navigation">
+        <button class="prev">&lt;</button>
+        <select class="time__select" name="timeframe" id="<% if (currentUser) { %><%= currentUser._id %><% } %>">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+        <button class="next">&gt;</button>
+      </div>
+      <div class="functions">
+        <div class="links">
+          <a href="/update">Update account >></a>
+        </div>
+        <div class="links">
+          <a href="/pain">Update pain record >></a>
+        </div>
+        <div class="links">
+          <a href="/pain">Enter goals >></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <div id="another-spacer">
-    <div class="form-group">
-      <select class="custom-select" name="timeframe" id="<% if (currentUser) { %><%= currentUser._id %><% } %>">
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-        <option value="monthly">Monthly</option>
-      </select>
-    </div>
-    <div class="button__cont">
-      <button class="prev">&lt;</button>
-      <button class="next">&gt;</button>
-    </div>
-  </div>
-
-  <div class="spacer3">
-    <div class="update-account"><a href="/update">Update account >></a></div>
-  </div>
-
-  <div class="spacer4">
-    <div class="update-pain-record"><a href="/pain">Update pain record >></a></div>
-  </div>
-
-  <div class="spacer2">
-    <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
-      coding cohort</div>
+  <div class="footer__text">
+    <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="heart"> by
+      the coding cohort</div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
