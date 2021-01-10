@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="Here is Debbie, your personal assistant to help you monitor your chronic pains.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,400;0,700;1,300;1,200;1,400&display=swap"
-        rel="stylesheet">
+    <meta name="description"
+        content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
     <title>Debbie, Your Chronic Pain Monitoring Personal Assistant</title>
@@ -15,70 +14,70 @@
 
 
 <body>
-    <header class="header-container">
-        <nav>
-            <ul class="main-nav__items">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__container">
                 <li>
-                    <img class="logo" src="/images/Logo.svg" alt="logo">
+                    <a href="/"><img class="logo" src="/images/Logo.svg" alt="logo"></a>
                 </li>
                 <li>
-                    <h1 id="brand-name">Debbie</h1>
+                    <h1 class="brand-name"><a href="/">Debbie</a></h1>
                 </li>
-                <li>
-                    <button class="sign-up__button--header">
+                <li class="last__list__item">
+                    <button class="sign-up__small">
                         <% if(!currentUser){ %>
                         <a href="/register">Sign Up Now!</a>
                         <% } else { %>
                         <a href="/signout"> Sign Out</a>
                         <% } %>
                     </button>
-                    <div><a href="/login">Or Sign in here >></a></div>
+                    <% if(!currentUser){ %>
+                    <div class="sign__in__text"><a href="/login">Or Sign in here >></a></div>
+                    <% } %>
                 </li>
             </ul>
-            <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
+            <div class="super_woman"><img src="/images/super_woman.svg" alt="super woman"></div>
         </nav>
     </header>
 
-    <div class="container">
+    <!-- <div class="container">
         <% if(error && error.length > 0){ %>
-        <div class="alert alert-danger" role="alert">
-            <%= error %>
-        </div>
-        <% } %> <% if(success && success.length > 0){ %>
-        <div class="alert alert-success" role="alert">
-            <%= success %>
-        </div>
-        <% } %>
-    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <%= error %>
+                    </div>
+                    <% } %> <% if(success && success.length > 0){ %>
+                    <div class="alert alert-success" role="alert">
+                        <%= success %>
+                    </div>
+                    <% } %>
+                    </div> -->
 
     <main>
-        <section class="header-section">
-            <article>
-
-                <p class="header-section__about">Managing pain can be hard. Debbie is here to help you!</p>
-                <p class="header-section__about header-section__about-italic">Available on Google Assistant and Alexa.
+        <section class="header__section">
+            <article class="header__section__first__part">
+                <p>Managing pain can be hard. Debbie is here to help you!</p>
+                <p class="header-section__about-italic">Available on Google Assistant and Alexa.
                 </p>
-                <p class="header-section__about">"Hey Google, get help from Debbie"</p>
-
+                <p>"Hey Google, get help from Debbie"</p>
                 <% if(!currentUser){ %>
                 <button class="sign-up__button--header">
-
                     <a href="/register">Sign Up Now!</a>
                 </button>
-
                 <% } %>
             </article>
-            <article>
-                <p class="sub-text">Debbie had a successful career in IT for many years before her chronic arthritis
-                    became too much.
-                    <br>Having struggled to find any specialist who could help, a friend came across a cognitive pain
-                    management course and paper toolset, and the
-                    <br>idea for a pain management app was born.</p>
+            <article class="header__section__second__part">
+                <p class="sub-text">Debbie had a successful career in IT for many years before her
+                    chronic arthritis
+                    became too much. Having struggled to find any specialist who could help, a friend
+                    came across a
+                    cognitive pain
+                    management course and paper toolset, and the idea for a pain management app was
+                    born.</p>
             </article>
         </section>
 
         <section id="info">
-            <h3 class="info-header">Build your confidence day by day</h3>
+            <h3 class="info__header">Build your confidence day by day</h3>
             <section class="links__icons">
                 <img src="/images/success.svg" alt="check mark icon" class="link__icon">
                 <img src="/images/like.svg" alt="red heart icon" class="link__icon">
@@ -88,38 +87,40 @@
 
             <section class="about">
                 <div class="about__chat">
-                    <img src="/images/chat.svg" class="chat-icon" alt="Chat Icon">
+                    <img src="/images/chat.svg" class="chat__icon" alt="Chat Icon">
                     <span>
                         <h3 class="about__header">"Talk to Debbie" with Google Assistant or Alexa</h3>
-                        <p>Its as simple as that. You can then plan your goals, record your pain level, work through
-                            exercises or
-                            set reminders.</p>
+                        <p class="about__text">Its as simple as that. You can then plan your goals,
+                            record your pain
+                            level, work through
+                            exercises or set reminders.</p>
                     </span>
                 </div>
                 <div class="about__reminder">
+                    <img id="about__reminder__icon" src="/images/bell.svg" alt="Bell Icon">
                     <span>
                         <h3 class="about__header">Set voice activated reminders</h3>
-                        <p>You can set them each day or each week at a time that suits you.</p>
+                        <p class="about__text">You can set them each day or each week at a time that
+                            suits you.</p>
                     </span>
-                    <img src="/images/bell.svg" class="bell-icon" alt="Bell Icon">
+                    <img src="/images/bell.svg" class="bell__icon" alt="Bell Icon">
                 </div>
-
             </section>
+
             <% if(!currentUser){ %>
-            <section id="sign-up">
+            <section class="footer__sign__up">
                 <button class="sign-up__button sign-up__button--big">
                     <a href="/register">Sign Up Now!</a>
                 </button>
-                <div><a href="/login">Already a member? Sign in here >></a></div>
+                <div class="sign__in__text"><a href="/login">Already a member? Sign in here >></a></div>
             </section>
             <% } %>
         </section>
-
     </main>
 
-    <div class="spacer2">
-        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
-            coding cohort</div>
+    <div class="footer__text">
+        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="heart"> by
+            the coding cohort</div>
     </div>
 </body>
 

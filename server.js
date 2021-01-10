@@ -24,7 +24,7 @@ app.use(
   expressSession({
     secret: process.env.SECRET,
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: false
   })
 );
 
