@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Sign up with us and we will try our best to monitor your pain level."
+      content="Update your account to monitor your pain level."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/update-user-account-page.css" />
@@ -14,18 +14,18 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon" />
-    <title>Sign Up to get started with us!</title>
+    <title>Update Your Account</title>
   </head>
 
   <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="nav__container">
+    <header class="header-container">
+      <nav>
+        <ul class="main-nav__items">
           <li>
             <img class="logo" src="/images/Logo.svg" alt="logo" />
           </li>
           <li>
-            <h1 class="brand-name">Debbie</h1>
+            <h1 id="brand-name-xnav">Debbie</h1>
           </li>
           <li>
             <a class="close-link" href="/">X</a>
@@ -37,18 +37,14 @@
       </nav>
     </header>
 
-    <div class="container">
-      <% if(error && error.length > 0){ %>
-      <div class="alert alert-danger" role="alert"><%= error %></div>
-      <% } %> <% if(success && success.length > 0){ %>
-      <div class="alert alert-success" role="alert"><%= success %></div>
-      <% } %>
+    <h2 id="heading-signup">Update your account details below</h2>
+    <div class="fingerimg">
+      &#128073;
+      <button id="edittext" onclick="edit()">Edit >></button>
     </div>
 
-    <h2 id="heading-signup">To get help from Debbie sign up now!</h2>
-
     <div class="wrapper">
-      <form id="form" class="form-signup" action="/register" method="POST">
+      <form id="form" action="/update?_method=put" method="POST">
         <div class="inputBox_name">
           <label for="name">Name</label>
           <input
@@ -58,7 +54,7 @@
             class="input_name"
             name="username"
             onchange="validation1()"
-            required
+            value="<%= user.username %>"
           />
           <span id="text1"></span>
         </div>
@@ -71,7 +67,7 @@
             placeholder="Enter Your Surname"
             name="surname"
             onchange="validation2()"
-            required
+            value="<%= user.surname %>"
           />
           <span id="text2"></span>
         </div>
@@ -84,7 +80,7 @@
             placeholder="Enter Your Email"
             name="email"
             onchange="validation()"
-            required
+            value="<%= user.email %>"
           />
           <span id="text"></span>
         </div>
@@ -97,34 +93,26 @@
             placeholder="Enter Your Password"
             name="password"
             onchange="validation3()"
-            required
+            value="<%= user.password %>"
           />
           <span id="text3"></span>
         </div>
-        <p class="form-foot">
-          <a href="/login" title="Sign In">Already have an account?</a>
-        </p>
         <input
           type="submit"
-          value="Sign Up Now!"
+          value="Update"
           class="sign-up__button sign-up__button--big"
         />
       </form>
     </div>
 
     <div class="heart">
-      <img src="/images/like.svg" alt="heart icon" id="hearticon1" />
+      <img src="/images/like.svg" alt="heart icon" id="hearticon" />
     </div>
     <div class="spacer2">
       <div class="end-text">
         Built with
-        <img
-          src="/images/like.svg"
-          alt="heart-icon"
-          class="icon-small"
-          id="hearticon"
-        />
-        by the coding cohort
+        <img src="/images/like.svg" alt="heart-icon" class="icon-small" /> by
+        the coding cohort
       </div>
     </div>
 
