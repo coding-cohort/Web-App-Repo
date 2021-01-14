@@ -18,14 +18,14 @@
   </head>
 
   <body>
-    <header class="header-container">
-      <nav>
-        <ul class="main-nav__items">
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__container">
           <li>
             <img class="logo" src="/images/Logo.svg" alt="logo" />
           </li>
           <li>
-            <h1 id="brand-name-xnav">Debbie</h1>
+            <h1 class="brand-name">Debbie</h1>
           </li>
           <li>
             <a class="close-link" href="/">X</a>
@@ -66,19 +66,30 @@
             >Wanna try again? Then, just sign in.</a
           >
         </p>
-        <input type="submit" value="Send Reset Mail" class="button" />
+        <input
+          type="submit"
+          value="Send Reset Mail"
+          class="button button-reset"
+        />
       </form>
     </div>
+
     <div class="heart">
-      <img src="/images/like.svg" alt="heart icon" id="hearticon" />
+      <img src="/images/like.svg" alt="heart icon" id="hearticon1" />
     </div>
     <div class="spacer2">
       <div class="end-text">
         Built with
-        <img src="/images/like.svg" alt="heart-icon" class="icon-small" /> by
-        the coding coh
+        <img
+          src="/images/like.svg"
+          alt="heart-icon"
+          class="icon-small"
+          id="hearticon"
+        />
+        by the coding cohort
       </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/usersideValidation.js"></script>
   </body>
