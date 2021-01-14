@@ -69,7 +69,7 @@ function validation2() {
   var surname = document.getElementById('surname').value;
   var text2 = document.getElementById('text2');
 
-  if (surname.length < 4) {
+  if (surname.length < 2) {
     form.classList.add('invalid2');
     form.classList.remove('valid2');
     form.classList.remove('mark2');
@@ -151,3 +151,4 @@ function validation4() {
     text4.style.color = 'yellow';
   }
 }
+

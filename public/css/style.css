@@ -1,23 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
-  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
   text-align: center;
-  min-height: 100vh;
-  /* background-image: linear-gradient(#d8d8d8 0%, #7b7fec 100%); */
-  background-image: -webkit-linear-gradient(
-    top,
-    rgba(119, 205, 209, 1) -100%,
-    rgba(100, 156, 248, 1) 100%
-  );
-  color: #fff;
+  background-image: linear-gradient(to top, #649cf8 0%, #77cdd1 100%);
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -25,413 +18,482 @@ a {
   color: #ffffff;
 }
 
+img {
+  width: 100%;
+}
+
 p {
-  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 button {
-  border-style: none;
-  width: 160px;
-  background: #5157ac;
-  height: auto;
-  color: #fff;
-  font-size: 0.9375em;
-  cursor: pointer;
-  font-weight: 600;
-  text-align: center;
+  border: none;
+  background: linear-gradient(to top, #5258f6 0%, #989dfb 80%, #b5b8f3 100%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.logout-link {
-  font-size: 2rem;
-  font-weight: 200;
-}
-
-.hand-emoji {
-  padding: 40px 20px 40px 20px;
-  font-size: x-large;
-}
-
-.hero-text {
-  padding: 30px 30px;
-  line-height: 1.6;
-  font-size: 2em;
-  font-weight: 200;
-}
-
-.close-link {
-  font-size: 4rem;
-  color: #ffffff;
-  font-weight: 100;
-  opacity: 0.5;
-}
-
-.close-link a {
-  color: #ffffff;
-}
-
-.container {
-  width: 70%;
-  margin: auto;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.alert-danger {
-  color: white;
-}
-
-.alert-success {
-  color: white;
-}
-
-main {
-  padding: 0 6%;
-}
-
-.header-container {
-  padding: 3rem 10% 1rem 10%;
-}
-
-.main-nav__items {
+.header__nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   list-style: none;
+  padding-top: 20px;
 }
 
-.main-nav__items li:last-of-type {
-  display: none;
+.nav__container {
+  list-style-type: none;
 }
 
 .logo {
-  height: 50px;
-  width: 35px;
+  width: 50px;
+  height: 100px;
 }
 
-#brand-name {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  text-align: center;
-  padding-left: 5.5rem;
+.brand-name {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-#brand-name-xnav {
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  text-align: center;
+.last__list__item {
+  display: none;
+}
+
+.sign-up__small {
+  margin-bottom: 10px;
 }
 
 .super_woman {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  width: 150px;
-  margin: 10px auto;
+  width: 40%;
+  margin: auto;
 }
 
-.super_woman img {
-  width: 100%;
-  object-fit: cover;
-}
-
-#heading {
-  padding: 20px;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-}
-
-#heading-signup {
-  padding-bottom: 4rem;
-  font-weight: 400;
-}
-
-.fingerimg {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  text-align: center;
-  height: 40px;
-  width: auto;
-}
-
-.header-section__about {
-  font-size: 1.7rem;
-  padding: 0.8rem 2rem;
-  line-height: 1.6;
-  font-weight: 400;
+.header__section__first__part,
+.header__section__second__part {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .header-section__about-italic {
   font-style: italic;
-  font-weight: 300;
 }
 
-.header-section button:first-of-type {
-  margin: 2.5rem 0;
+.sign-up__button--header {
+  margin: 40px 0px 20px 0px;
 }
 
 .sub-text {
-  padding: 40px 20px 40px 20px;
-  line-height: 1.4;
-  font-weight: 300;
+  padding: 40px 0px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-#myChart {
-  max-width: 750px;
-  max-height: 650px;
-  margin: auto;
+.info {
+  text-align: center;
 }
 
-#another-spacer {
-  padding-top: 6rem;
-}
-
-select {
-  height: 50px;
-  outline: none;
-  border: none;
-  padding-left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #0e15f3;
-}
-
-.button__cont {
-  width: 50%;
-  margin: -50px auto 0px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button__cont button {
-  width: 50px;
-}
-
-.update-account {
-  font-size: 1.75rem;
-  font-weight: 200;
-  padding-bottom: 20px;
-  padding-top: 100px;
-}
-
-.update-account a {
-  color: #fff;
-  cursor: pointer;
-}
-
-.update-pain-record {
-  font-size: 1.75rem;
-  font-weight: 200;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.update-pain-record a {
-  color: #fff;
-  cursor: pointer;
-}
-
-/******************** Info Section  ********************/
-
-#info {
-  margin: 3rem 0;
-}
-
-.info-header,
-.about__header {
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+.info__header {
+  width: 90%;
+  margin: 10px auto 70px auto;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .links__icons {
-  display: flex;
-  justify-content: space-between;
-  padding: 6rem 0;
-  opacity: 0.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .link__icon {
-  width: 10%;
-  max-width: 3.5rem;
-  min-width: 2.6rem;
+  justify-self: center;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
 }
 
 .about {
-  display: block;
+  text-align: center;
+  margin: 100px auto;
+  width: 90%;
 }
 
-.about img {
-  margin-bottom: 2rem;
-  width: 50px;
+.chat__icon,
+#about__reminder__icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  opacity: 0.6;
 }
 
 .about__chat,
 .about__reminder {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 5rem;
+  margin: 50px auto;
 }
 
-.about__reminder {
-  display: flex;
-  flex-direction: column-reverse;
+.about__header,
+.about__text {
+  margin-bottom: 10px;
 }
 
-.chat-icon {
-  opacity: 0.5;
+.bell__icon {
+  display: none;
 }
 
-.bell-icon {
-  opacity: 0.5;
+.footer__sign__up {
+  margin: 100px auto;
 }
 
-#sign-up {
-  margin: 8rem auto;
+.sign-up__button--big {
+  /* font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding: 10px 40px; */
+  margin: 40px 0px 20px 0px;
 }
 
-.sign-up__button a {
-  font-size: 1.5em;
-  font-weight: 400;
+.footer__heart {
+  margin: 100px 0px;
 }
 
-/******************** Footer  ********************/
+.footer__text {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
 .heart {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-#hearticon {
-  text-align: center;
-  height: 20px;
   width: 20px;
-  opacity: 0.5;
-}
-
-.spacer2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.icon-small {
+  height: 20px;
+  opacity: 0.4;
   vertical-align: middle;
-  padding-bottom: 10px;
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
-  line-height: 150px;
-  font-size: 3em;
+  margin: auto;
+}
+
+#hearticon1 {
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+}
+
+.chart__container {
+  border-radius: 5px;
+  margin: 40px auto;
+  width: 95%;
+  background-color: #ffffff;
+}
+
+.chart__header {
+  background-color: #e2e8ee;
+  color: #4a10a9;
+  padding: 20px 10px;
+  text-align: right;
+  font-size: 1.2rem;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid #979797;
+}
+
+.chart__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.prev {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.time__select {
+  border: none;
+  border-radius: 0px;
+  background-color: #ffffff;
+  color: #4a10a9;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.next {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.functions {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.save__button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pain__input__label {
   text-align: center;
-  opacity: 0.5;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.number__input {
+  border-top: 1px solid white;
+  height: 150px;
+  margin-top: 70px;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top ease 0.5s;
 }
 
 .end-text {
-  font-size: 10px;
-  opacity: 0.6;
-  padding-bottom: 50px;
+  margin-top: 200px;
 }
 
-@media screen and (max-width: 768px) {
-  .about__chat,
-  .about__reminder {
-    display: none;
-  }
+.forgetPassword {
+  padding-right: 20px;
+}
 
-  .about__chat {
-    display: none;
-  }
+#minus,
+#plus {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.875em;
+  cursor: pointer;
+}
 
-  .about__reminder {
-    display: none;
-  }
+#number {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #6aabec;
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+}
 
-  .logo {
-    height: 50px;
-    width: 35px;
-  }
+#minus {
+  margin-right: 50px;
+  animation: drop 1.5s ease;
+}
 
-  #brand-name {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    padding-right: 80px;
-    padding-top: 20px;
-  }
+#plus {
+  margin-left: 50px;
+  animation: drop 1.5s ease;
+}
 
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
+#plus:hover,
+#minus:hover {
+  transform: scale(1.2);
+}
+
+.alert {
+  padding: 20px;
+}
+
+#heading {
+  margin: 80px;
+}
+
+#heading-signup {
+  margin: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    padding: 0px 16%;
+  .nav__container {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .links__icons {
-    padding: 6rem 3rem;
+  .brand-name {
+    margin-left: 100px;
+    margin-bottom: 0px;
   }
 
-  .sign-up__button--big {
-    width: 22rem;
-    height: 3rem;
+  .last__list__item {
+    display: block;
+  }
+
+  .sign-up__small {
+    margin-bottom: 0px;
+  }
+
+  .super_woman {
+    width: 30%;
+  }
+
+  .chart__container {
+    width: 90%;
+    margin: 70px auto;
+  }
+
+  .chart__header {
+    padding: 30px 20px;
+    font-size: 1.5rem;
+  }
+
+  .prev {
+    padding: 20px;
+  }
+
+  .time__select {
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+
+  .next {
+    padding: 20px;
+  }
+
+  .functions {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 50px;
+  }
+
+  .links {
+    margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .main-nav__items {
-    flex-direction: row;
-    justify-content: space-between;
+@media screen and (min-width: 1280px) {
+  button {
+    font-size: 1.5rem;
   }
 
-  .main-nav__items li:last-of-type {
-    display: inline-block;
+  .header__nav {
+    padding-top: 40px;
+  }
+
+  .nav__container {
+    margin-bottom: 40px;
   }
 
   .logo {
-    height: 75px;
-    width: 50px;
+    width: 75px;
+    height: 100px;
+  }
+
+  .brand-name {
+    font-size: 4rem;
+    margin-left: 150px;
+    margin: auto;
+  }
+
+  .sign-up__small {
+    margin-bottom: 10px;
+  }
+
+  .super_woman {
+    width: 20%;
+  }
+
+  .sign__in__text {
+    font-size: 1.3rem;
+  }
+
+  .header__section__first__part,
+  .header__section__second__part {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  .sub-text {
+    font-size: 1.4rem;
+  }
+
+  .info__header {
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+
+  .links__icons {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+  }
+
+  .link__icon {
+    justify-self: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  .chat__icon,
+  .bell__icon {
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+  }
+
+  .chat__icon {
+    margin-right: 20px;
+  }
+
+  .bell__icon {
+    display: inline-block;
+    margin-left: 20px;
   }
 
   .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-row-gap: 5rem;
-    grid-template-areas:
-      '. occupy1'
-      'occupy2 .';
-  }
-
-  .about img {
-    width: 3.5rem;
-    margin: 0px 15px;
+    grid-template-columns: 50% 50%;
   }
 
   .about__chat,
   .about__reminder {
     display: flex;
     align-items: flex-start;
-    flex-direction: row;
   }
 
   .about__chat {
-    grid-area: occupy1;
-    text-align: left;
+    grid-column: 2/3;
+    margin-left: -30px;
   }
 
   .about__reminder {
-    grid-area: occupy2;
-    text-align: left;
+    margin-right: -30px;
   }
-}
 
-img[src*='#thumbnail'] {
-  width: 150px;
-  height: 100px;
+  .about__header {
+    font-size: 1.8rem;
+  }
+
+  .about__text {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  #about__reminder__icon {
+    display: none;
+  }
+
+  .footer__text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .chart__container {
+    margin: 100px auto;
+  }
+
+  .chart__header {
+    padding: 50px 30px;
+    font-size: 2rem;
+  }
 }

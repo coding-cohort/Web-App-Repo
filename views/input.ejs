@@ -7,72 +7,60 @@
     <meta name="description"
         content="This is a pain management app that will help people with chronic pain to record their pain levels and keep track of the reports.">
     <meta name="theme-color" content="#7b7fec">
-    <link rel="stylesheet" href="/css/input-pain-levels.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
     <title>Report Pain Levels</title>
 </head>
 
 <body>
-    <header class="header-container">
-        <nav>
-            <ul class="main-nav__items">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__container">
                 <li>
-                    <img class="logo" src="/images/Logo.svg" alt="logo">
+                    <a href="/"><img class="logo" src="/images/Logo.svg" alt="logo"></a>
                 </li>
                 <li>
-                    <h1 id="brand-name-xnav">Debbie</h1>
+                    <h1 class="brand-name"><a href="/">Debbie</a></h1>
                 </li>
-                <li>
-                    <a class="close-link" href="/report">X</a>
+                <li class="last__list__item">
+                    <h1 class="brand-name"><a href="/">X</a></h1>
                 </li>
             </ul>
-            <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
+            <div class="super_woman"><img src="/images/super_woman.svg" alt="super woman"></div>
         </nav>
     </header>
 
-    <div class="container">
-        <% if(error && error.length > 0){ %>
-        <div class="alert alert-danger" role="alert">
-            <%= error %>
-        </div>
-        <% } %> <% if(success && success.length > 0){ %>
-        <div class="alert alert-success" role="alert">
-            <%= success %>
-        </div>
-        <% } %>
-    </div>
+    <main>
+        <section class="header__section">
+            <article class="header__section__first__part">
+                <p style="font-weight: normal;">Let Debbie help monitor your pain</p>
+                <p><br> &#128071;</p>
+            </article>
+        </section>
 
-    <h2 id="heading">Let Debbie help monitor your pain</h2>
-    <div class="fingerimg">
-        &#128071;
-    </div>
+        <section class="pain__input__section">
+            <p class="pain__input__label">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
+            <form action="/pain" method="POST">
+                <div class="number__input">
+                    <div id="minus" title="decrement the pain input" role="button">-</div>
+                    <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1">
+                    <div id="plus" title="increment the pain input" role="button">+</div>
+                </div>
+                <button class="save__button">Save</button>
+                <% if(painSubmit){ %>
+                <div class="alert" role="alert">
+                    If you try to submit your pain level again, the action will
+                    replace today's previous data.
+                </div>
+                <% } %>
+            </form>
+        </section>
+    </main>
 
-    <div class="wrapper">
-        <p id="askpainlevel">Select your pain level from <br>1 - not so bad to 10 - really bad!</p>
-        <form action="/pain" method="POST">
-            <div class="numberinput">
-                <div id="minus" title="decrement the pain input" role="button">-</div>
-                <input type="number" min="1" max="10" name="pain" id="number" title="pain level" value="1">
-                <div id="plus" title="increment the pain input" role="button">+</div>
-            </div>
-            <div class="space"></div>
-            <button class="save-button">Save</button>
-            <% if(painSubmit){ %>
-            <div class="alert alert-danger" role="alert">
-                If you try to submit your pain level again, the action will
-                replace today's previous data.
-            </div>
-            <% } %>
-        </form>
-    </div>
-
-    <div class="heart">
-        <img src="/images/like.svg" alt="heart icon" id="hearticon">
-    </div>
-    <div class="spacer2">
-        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
-            coding cohort</div>
+    <div class="footer__text">
+        <div class="footer__heart"><img src="/images/like.svg" alt="heart-icon" class="heart"></div>
+        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="heart"> by
+            the coding cohort</div>
     </div>
 
     <script src="/js/input-pain-level.js"></script>
