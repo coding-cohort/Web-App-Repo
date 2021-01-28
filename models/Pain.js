@@ -5,6 +5,7 @@ const PainSchema = new mongoose.Schema({
   daily: Array,
   weekly: Array,
   monthly: Array,
+  date: { type: Date },
   painSubmit: { type: Boolean, default: false },
 });
 
