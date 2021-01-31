@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Welcome Back! Log in to continue monitoring your everyday pain.">
+    <meta
+      name="description"
+      content="Welcome Back! Log in to continue monitoring your everyday pain."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/update-user-account-page.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/images/Logo.svg" type="image/x-icon" />
     <title>We are here to help you to remember your password, Dear!</title>
-</head>
+  </head>
 
-<body>
-    <header class="header-container">
-        <nav>
-            <ul class="main-nav__items">
-                <li>
-                    <img class="logo" src="/images/Logo.svg" alt="logo">
-                </li>
-                <li>
-                    <h1 id="brand-name-xnav">Debbie</h1>
-                </li>
-                <li>
-                    <a class="close-link" href="/">X</a>
-                </li>
-            </ul>
-            <div class="super_woman"><img src="/images/super_woman.svg" alt="super_woman_img"></div>
-        </nav>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__container">
+          <li>
+            <img class="logo" src="/images/Logo.svg" alt="logo" />
+          </li>
+          <li>
+            <h1 id="brand-name">Debbie</h1>
+          </li>
+          <li class="last__list__item">
+            <h1 class="brand-name"><a href="/">X</a></h1>
+          </li>
+        </ul>
+        <div class="super_woman">
+          <img src="/images/super_woman.svg" alt="super_woman_img" />
+        </div>
+      </nav>
     </header>
-
-    <div class="container">
-        <% if(error && error.length > 0){ %>
-        <div class="alert alert-danger" role="alert">
-            <%= error %>
-        </div>
-        <% } %> <% if(success && success.length > 0){ %>
-        <div class="alert alert-success" role="alert">
-            <%= success %>
-        </div>
-        <% } %>
-    </div>
 
     <h2 id="heading">Let's help us find out your password!</h2>
     <div class="wrapper">
-        <form id="form" action="/reset/<%= token %> " method="POST">
-            <div class="inputBox_password">
-                <label for="password">Password</label>
-                <input type="password" id="password" class="input_password" placeholder="Enter New Password"
-                    name="password" onchange="validation3()" />
-                <span id="text3"></span>
-            </div>
-            <div class="inputBox_password">
-                <label for="conpassword">Confirm Password</label>
-                <input type="password" id="conpassword" class="input_password" placeholder="Confirm Your Password"
-                    name="conpassword" onchange="validation4()" />
-                <span id="text4"></span>
-            </div>
-            <p class="form-foot"><a href="/login" title="Log in">Wanna try again?Then, just sing in.</a></p>
-            <input type="submit" value="Reset" class="button" />
-        </form>
+      <form id="form" action="/reset/<%= token %> " method="POST">
+        <div class="inputBox_password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="input_password"
+            placeholder="Enter New Password"
+            name="password"
+            onchange="validation3()"
+          />
+          <span id="text3"></span>
+        </div>
+        <div class="inputBox_password">
+          <label for="conpassword">Confirm Password</label>
+          <input
+            type="password"
+            id="conpassword"
+            class="input_password"
+            placeholder="Confirm Your Password"
+            name="conpassword"
+            onchange="validation4()"
+          />
+          <span id="text4"></span>
+        </div>
+        <p class="form-foot">
+          <a href="/login" title="Log in"
+            >Wanna try again?Then, just sing in.</a
+          >
+        </p>
+        <input type="submit" value="Reset" class="button" />
+      </form>
     </div>
     <div class="heart">
-        <img src="/images/like.svg" alt="heart icon" id="hearticon">
+      <img src="/images/like.svg" alt="heart icon" id="hearticon" />
     </div>
     <div class="spacer2">
-        <div class="end-text">Built with <img src="/images/like.svg" alt="heart-icon" class="icon-small"> by the
-            coding coh
-        </div>
+      <div class="end-text">
+        Built with
+        <img src="/images/like.svg" alt="heart-icon" class="icon-small" /> by
+        the coding coh
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/usersideValidation.js"></script>
-</body>
-
+  </body>
 </html>
