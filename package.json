@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/VijayKumarKTG/Web-App-Repo#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "connect-flash": "^0.1.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.3",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-session": "^1.17.1",
     "method-override": "^3.0.0",
     "moment": "^2.27.0",
